@@ -1,0 +1,59 @@
+\chapter{Déploiement}
+
+\section*{Déploiement - schéma d’architecture}
+\addcontentsline{toc}{section}{Déploiement - schéma d’architecture}
+
+Pour mettre JardinSolidaire en ligne, j’ai choisi un déploiement \textbf{simple et proche d’un setup pro}, avec une séparation claire des rôles : le front \textbf{Next.js} sur \textbf{Vercel}, l’API \textbf{Node/Express} sur \textbf{Render}, et la base \textbf{PostgreSQL} sur \textbf{Neon}. Mon objectif était d’avoir un MVP \textbf{opérable}, facile à maintenir, et facile à faire évoluer.
+
+Le fonctionnement est le suivant : l’utilisateur·ice passe toujours par le front. C’est lui qui affiche les pages, les formulaires et l’interface. Dès qu’une action a besoin de données (lister des jardins, créer une réservation, charger un profil, envoyer un message), j’envoie une requête HTTP depuis le front vers l’API. Ensuite, l’API applique les règles métier (droits, validations, anti-conflits) et lit/écrit en base sur Neon via Prisma, puis renvoie une réponse au front. Ce flux \og front $\rightarrow$ API $\rightarrow$ base $\rightarrow$ front \fg{} me permet de garder des responsabilités nettes : \textbf{le front affiche}, \textbf{l’API décide}, \textbf{la base stocke} (Figure~\ref{fig:deploy-archi}).
+
+\vspace{\dbspacebefore}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{assets/14_déploiement/schema.png}
+  \caption{Schéma d’architecture de déploiement (Vercel / Render / Neon).}
+  \label{fig:deploy-archi}
+\end{figure}
+\vspace{\dbspaceafter}
+
+Côté sécurité, j’ai configuré le \textbf{CORS} pour que mon API n’accepte que les requêtes provenant du domaine du front. Concrètement, j’ai externalisé cette configuration côté Render via des variables d’environnement (Figure~\ref{fig:deploy-render-env}) : je garde les secrets hors du code (JWT, URLs), je limite les origines autorisées, et je peux ajuster la configuration sans modifier le repository.
+
+\section*{Déploiement - plateformes et choix techniques}
+\addcontentsline{toc}{section}{Déploiement - plateformes et choix techniques}
+
+J’ai documenté précisément le rôle de chaque plateforme, parce que je voulais un déploiement où chaque brique reste remplaçable sans casser les autres : le front reste un client HTTP, l’API centralise la logique métier, et la base conserve l’état.
+
+Sur \textbf{Vercel}, j’ai déployé le front Next.js avec un cycle fluide : le dépôt est connecté et chaque push sur la branche principale déclenche automatiquement un build puis un déploiement. J’ai choisi ce fonctionnement pour réduire la friction : je pousse, je vérifie en ligne, et je garde une trace claire des versions déployées (Figure~\ref{fig:deploy-vercel-card}).
+
+\vspace{\dbspacebefore}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.6\textwidth]{assets/14_déploiement/vercel_deploy_card.png}
+  \caption{Vercel : déploiement automatique relié à GitHub (chaque push sur \texttt{main} déclenche un build + un déploiement).}
+  \label{fig:deploy-vercel-card}
+\end{figure}
+\vspace{\dbspaceafter}
+
+Sur \textbf{Render}, j’ai déployé l’API Node/Express depuis le dépôt GitHub. J’ai fait le choix de piloter la configuration uniquement via des variables d’environnement : c’est la configuration qui change selon l’environnement, pas le code. Ça me permet aussi de séparer proprement local et production, tout en évitant de versionner des secrets.
+
+\vspace{\dbspacebefore}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.8\textwidth]{assets/14_déploiement/render_env_vars.png}
+  \caption{Render : configuration par variables d’environnement pour garder les secrets hors du code et piloter la sécurité (CORS / JWT).}
+  \label{fig:deploy-render-env}
+\end{figure}
+\vspace{\dbspaceafter}
+\newpage
+Sur \textbf{Neon}, j’ai choisi une base PostgreSQL managée pour ne pas perdre de temps sur l’infrastructure. Mon objectif était de me concentrer sur le produit, tout en gardant une base centralisée et cohérente. Neon s’intègre bien avec Prisma : je garde un historique clair de l’évolution du schéma grâce aux migrations, ce qui rend le setup reproductible et auditable (Figure~\ref{fig:deploy-neon-migrations}).
+
+\vspace{\dbspacebefore}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{assets/14_déploiement/neon_prisma_migrations.png}
+  \caption{Neon (PostgreSQL) : suivi des migrations Prisma en production (\texttt{\_prisma\_migrations}) pour versionner l’évolution du schéma et garder un historique fiable.}
+  \label{fig:deploy-neon-migrations}
+\end{figure}
+\vspace{\dbspaceafter}
+
+Au final, ce trio \textbf{Vercel / Render / Neon} me donne un déploiement simple à opérer, réaliste en contexte professionnel, et solide pour un MVP : responsabilités séparées, secrets hors du code, et une base versionnée proprement via Prisma.

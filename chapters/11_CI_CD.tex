@@ -1,0 +1,28 @@
+\chapter{CI/CD, Tests et Qualité}
+
+Pour rendre JardinSolidaire fiable, je n’ai pas voulu dépendre uniquement de tests "à la main". J’ai donc mis en place une démarche de qualité basée sur la \textbf{CI/CD} : à chaque modification, je déclenche automatiquement des vérifications, et je sais immédiatement si une évolution a cassé quelque chose.
+
+J’ai implémenté cette automatisation avec \textbf{GitHub Actions}. Mon objectif était d’avoir un contrôle reproductible, dans un environnement neutre, qui s’exécute de la même façon à chaque \textit{push} et à chaque \textit{Pull Request}. Je définis une suite d’étapes (installation, configuration, tests), et GitHub Actions les rejoue automatiquement, sans que j’aie à relancer tout à la main.
+
+Dans JardinSolidaire, j’ai créé un workflow dédié aux \textbf{tests du back-end}, parce que c’est là que se trouvent les règles sensibles (authentification, autorisations, réservation et anti-conflits). À chaque exécution, le workflow installe les dépendances, prépare un environnement de test isolé et configure une \textbf{base de données de test} séparée. J’exécute ensuite \textbf{Prisma} : je génère le client, puis j’applique les migrations sur cette base de test, pour garantir que le schéma en base correspond bien à la version du code. Une fois l’environnement prêt, les tests s’exécutent automatiquement.
+
+\newcommand{\workflowswidth}{0.85} 
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\workflowswidth\textwidth]{assets/11_CI_CD/workflows.png}
+  \caption{{Vue d’ensemble des workflows CI/CD (GitHub Actions)}}
+\end{figure}
+
+Ce mécanisme me sert de \textbf{filet de sécurité}. Dès que je touche à une partie critique (par exemple la logique de réservation), j’obtiens un retour immédiat : si un test échoue, la pipeline passe au rouge, et je corrige tout de suite pendant que le contexte est encore frais. Ça évite d’accumuler des erreurs invisibles et ça rend l’évolution du projet plus sereine.
+
+En complément, j’ai ajouté d’autres workflows pour couvrir la qualité du projet de manière plus globale. Par exemple, certains lancent des tests \textbf{end-to-end (E2E)} qui rejouent un parcours utilisateur complet dans un navigateur, et d’autres vérifient la construction des images \textbf{Docker}. L’intérêt de Docker, c’est que je teste et je déploie exactement le même paquet : une image validée par les tests correspond à une version précise de l’application, avec ses dépendances et sa configuration.
+
+Au final, cette approche CI/CD m’apporte deux bénéfices très concrets. D’abord, je détecte les \textbf{régressions} le plus tôt possible, avant qu’elles n’arrivent côté utilisateur. Ensuite, quand tout est au vert, je peux livrer une nouvelle version avec plus de confiance, sans refaire manuellement toutes les vérifications. C’est un gain de temps, mais surtout un gain de qualité et de stabilité pour faire évoluer JardinSolidaire.
+
+\newcommand{\backendtestswidth}{0.7} 
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\backendtestswidth\textwidth]{assets/11_CI_CD/backend_tests.png}
+  \caption{{Workflow back-end : installation → base de test → Prisma → tests}}
+\end{figure}

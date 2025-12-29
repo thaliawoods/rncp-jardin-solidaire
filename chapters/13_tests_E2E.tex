@@ -1,0 +1,47 @@
+\chapter{Tests end-to-end (E2E)}
+
+En complément des tests unitaires et d’intégration, j’ai mis en place des tests \textbf{end-to-end (E2E)} avec \textbf{Playwright}. Mon objectif est de vérifier que JardinSolidaire fonctionne \textbf{comme un utilisateur le vit}, à l’écran, et pas seulement "en théorie" via une fonction ou une réponse JSON.
+
+Avec les E2E, je rejoue des scénarios complets du début à la fin : un navigateur ouvre l’interface Next.js, l’utilisateur·ice clique, navigue, remplit un formulaire, et l’application déclenche des appels à l’API Express. Ce type de test traverse les couches (front, API, et parfois base) et me permet de valider le parcours réel : est-ce que la page charge, est-ce que la navigation fonctionne, est-ce que les éléments attendus s’affichent, est-ce que je finis au bon endroit ?
+
+J’ai ciblé en priorité les parcours critiques : charger une page essentielle, naviguer de la liste des jardins vers une fiche jardin, vérifier qu’un formulaire clé est bien rendu, et contrôler que certains comportements changent correctement selon qu’on est connecté·e ou non (par exemple les favoris).
+
+Un exemple représentatif est le scénario \texttt{gardens.spec.js}. Dans ce test, je simule un usage réel : j’ouvre la page des jardins, je vérifie qu’au moins une carte s’affiche, puis je clique sur un jardin et je contrôle que j’arrive bien sur la page de détail (Figure~\ref{fig:e2e-gardens}). J’ai choisi ce scénario parce qu’il sécurise un point de friction classique : si la liste ne rend rien, ou si la navigation casse, l’utilisateur·ice ne peut tout simplement pas avancer. Ici, je valide donc l’expérience complète : chargement, navigation, rendu, et cohérence du parcours.
+
+\vspace{\dbspacebefore}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.6\textwidth]{assets/13_tests_E2E/code_e2e_gardens_spec.png}
+  \caption{\texttt{gardens.spec.js}}
+  \label{fig:e2e-gardens}
+\end{figure}
+\vspace{\dbspaceafter}
+
+\newpage
+
+J’ai aussi écrit un scénario \texttt{register.spec.js} pour valider qu’un parcours clé “formulaire” reste utilisable : présence d’un titre, champ email, champ mot de passe et bouton de soumission. J’ai fait ce choix parce que ces éléments sont des prérequis UX : si un champ disparaît, si un label change, ou si la page ne rend rien, l’utilisateur·ice est bloqué·e immédiatement. Pour rendre le test robuste, j’ai ajouté des fallbacks (par label, type d’input, placeholder), afin qu’un changement mineur de wording ne casse pas le test, tout en détectant les vraies régressions (Figure~\ref{fig:e2e-register}).
+
+\vspace{\dbspacebefore}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.6\textwidth]{assets/13_tests_E2E/code_e2e_register_spec1.png}\par\smallskip
+  \includegraphics[width=0.6\textwidth]{assets/13_tests_E2E/code_e2e_register_spec2.png}
+  \caption{\texttt{register.spec.js}}
+  \label{fig:e2e-register}
+\end{figure}
+\vspace{\dbspaceafter}
+
+Pour écrire des tests plus lisibles, je garde une structure inspirée de \textit{Given / When / Then}. Je pars d’un état de départ, je déclenche une action, puis je vérifie le résultat attendu. Cette logique m’aide à éviter les scénarios confus et à produire des tests faciles à relire, donc plus simples à maintenir.
+
+Enfin, j’ai intégré ces tests E2E à la \textbf{CI/CD} via \textbf{GitHub Actions}. À chaque push ou Pull Request, je lance automatiquement un environnement de test reproductible : un service Postgres, l’application du schéma Prisma, un seed de données, puis l’exécution Playwright avec génération d’un rapport HTML. J’ai choisi de l’automatiser dans la CI pour détecter une régression le plus tôt possible : si un changement casse un parcours important, je le vois immédiatement, avant déploiement, et je peux corriger avec un contexte encore frais (Figure~\ref{fig:e2e-ci}).
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.4\textwidth]{assets/13_tests_E2E/code_github_actions_playwright1.png}\par\smallskip
+  \includegraphics[width=0.4\textwidth]{assets/13_tests_E2E/code_github_actions_playwright2.png}\par\smallskip
+  \includegraphics[width=0.6\textwidth]{assets/13_tests_E2E/code_github_actions_playwright3.png}
+  \caption{CI E2E}
+  \label{fig:e2e-ci}
+\end{figure}
+
+Au final, les tests unitaires et d’intégration me protègent sur la logique et le comportement de l’API, tandis que les E2E me protègent sur les parcours réels. Ensemble, ils rendent JardinSolidaire plus fiable et réduisent les mauvaises surprises au moment du déploiement.

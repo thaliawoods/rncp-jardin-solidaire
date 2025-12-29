@@ -1,0 +1,65 @@
+% ===========================
+% 9. Gestion de projet
+% ===========================
+
+\chapter{Gestion de projet}
+
+\section*{Organisation et contexte}
+\addcontentsline{toc}{section}{Organisation et contexte}
+
+JardinSolidaire a été lancé à trois, puis j’ai poursuivi le développement seule pour amener le MVP jusqu’au bout. En autonomie, j’ai gardé une organisation proche d’un contexte d’équipe, afin de suivre l’avancement de manière claire, de maintenir une base de code saine, et d’éviter les retours en arrière.
+
+En amont, nous avons rédigé un cahier des charges interne qui a servi de fil conducteur : objectifs, périmètre du MVP, priorités, contraintes et planning.
+
+\subsection*{Annexe C — Cahier des charges}
+
+\section*{Suivi : Kanban en flux continu et priorisation MoSCoW}
+\addcontentsline{toc}{section}{Suivi : Kanban en flux continu et priorisation MoSCoW}
+
+Pour piloter l’avancement, j’ai utilisé un tableau \textbf{Kanban} en flux continu : j’ai fait avancer les tâches étape par étape (à faire $\rightarrow$ en cours $\rightarrow$ à relire/tester $\rightarrow$ terminé), sans découpage en sprints. Ce format correspondait mieux au projet : je réajustais les priorités au fil des retours et des blocages techniques, tout en gardant une vision du prochain objectif.
+
+Pour prioriser, j’ai appliqué \textbf{MoSCoW} afin de protéger le MVP : j’ai d’abord livré le \textit{Must have} (parcours essentiel), puis seulement ensuite ce qui améliorait l’expérience sans être bloquant. J’ai découpé chaque fonctionnalité en tickets concrets et testables (profil, affichage des jardins, réservation d’un créneau\ldots), ce qui m’a permis d’avancer par petites unités, de valider plus souvent, et de limiter le risque de tâches trop longues ou floues.
+
+\section*{Workflow : du ticket à l’intégration}
+\addcontentsline{toc}{section}{Workflow : du ticket à l’intégration}
+
+J’ai mis en place un workflow reproductible, du besoin jusqu’à l’intégration du code. Concrètement, je pars d’un ticket, je développe sur une branche dédiée, puis j’ouvre une Pull Request, ce qui permet une relecture à froid, une description claire du changement, et une traçabilité de l’évolution du projet. Couplé à la CI, ce workflow m’a permis d’intégrer plus sereinement et de limiter les régressions.
+
+\vspace{\dbspacebefore}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.95\textwidth]{assets/09_gestion_de_projet/merge.png}
+  \caption{Workflow : du ticket à l’intégration (branche dédiée + Pull Request + CI)}
+  \label{fig:js-workflow-merge}
+\end{figure}
+\vspace{\dbspaceafter}
+
+\section*{Definition of Done}
+\addcontentsline{toc}{section}{Definition of Done}
+
+Pour éviter des tickets \og terminés \fg{} mais incomplets, j’ai mis en place une \textbf{Definition of Done} simple :
+\begin{itemize}
+  \item le code est développé sur une \textbf{branche dédiée} liée au ticket ;
+  \item la fonctionnalité est \textbf{testable} (cas nominal + principaux cas limites) ;
+  \item la \textbf{CI est au vert} ;
+  \item la Pull Request est prête à être fusionnée (description claire et changements identifiables).
+\end{itemize}
+
+\vspace{\dbspacebefore}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.95\textwidth]{assets/09_gestion_de_projet/backlog.png}
+  \caption{Tableau Kanban}
+  \label{fig:js-kanban-backlog}
+\end{figure}
+\vspace{\dbspaceafter}
+
+\section*{Qualité et automatisation}
+\addcontentsline{toc}{section}{Qualité et automatisation}
+
+Pour sécuriser l’intégration, j’ai connecté la \textbf{CI} avec \textbf{GitHub Actions}. À chaque push ou Pull Request, je lance automatiquement les vérifications principales (lint, tests unitaires, tests d’intégration, tests end-to-end Playwright). L’objectif est simple : détecter une erreur le plus tôt possible, garder une base de code stable, et éviter qu’un changement casse une fonctionnalité déjà validée.
+
+\section*{Bénéfices de cette organisation}
+\addcontentsline{toc}{section}{Bénéfices de cette organisation}
+
+Cette organisation m’a permis de garder le cap sur le MVP, d’avancer de manière régulière avec un suivi visible, et de maintenir une base de code plus saine grâce à un workflow discipliné.

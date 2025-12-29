@@ -1,0 +1,77 @@
+\chapter{Listes des compétences du référentiel}
+
+\section{Bloc 1 — Développer une application sécurisée}
+
+\subsection{Installation et configuration de l'environnement}
+Pour lancer JardinSolidaire dans de bonnes conditions, j’ai mis en place un environnement complet et \textbf{reproductible} : Node.js, PostgreSQL, Docker, Git et VS Code. J’ai volontairement séparé le projet en deux applications (front Next.js et back Express/Node) avec des fichiers \texttt{.env} distincts, afin d’isoler les configurations et de garder les \textbf{variables sensibles hors du code}. J’ai aussi documenté tout le parcours d’installation dans un README (clone, \texttt{docker-compose}, migrations Prisma, lancement front/back), pour qu’une autre personne puisse démarrer le projet simplement.
+
+\subsection{Développement d'interfaces utilisateur·ices}
+J’ai développé l’interface en React/Next.js en pensant dès le départ aux deux profils principaux : \textbf{propriétaires} et \textbf{jardinier·ères}. J’ai construit les écrans nécessaires au \textbf{parcours réel} : recherche et consultation de jardins, fiche détaillée, demande de réservation, gestion des disponibilités et des favoris. J’ai fait attention à la \textbf{responsivité (mobile-first)} et à une base d’\textbf{accessibilité} (labels de formulaires, contrastes, messages d’erreur clairs), pour que l’application reste utilisable sur différents supports et que la personne utilisatrice comprenne toujours ce qui se passe.
+
+\subsection{Développement des composants métier}
+Côté back-end, j’ai structuré la logique métier pour qu’elle soit \textbf{centralisée} et \textbf{réutilisable} : les règles sensibles (réservations, conflits d’horaires, statuts, rôles propriétaire/jardinier·ère) sont regroupées dans des fonctions dédiées plutôt que dispersées dans les routes. Ce choix me permet de garder des routes lisibles et de sécuriser la logique \textbf{au même endroit}. Côté front, j’ai créé des composants réutilisables orientés métier (carte jardin, filtres, formulaire de réservation) afin d’éviter les duplications et de maintenir une interface \textbf{cohérente}.
+
+\subsection{Gestion de projet}
+J’ai piloté JardinSolidaire comme un mini-projet professionnel : définition du périmètre \textbf{MVP}, découpage en tâches concrètes, et \textbf{priorisation} pour livrer d’abord le parcours essentiel. J’ai utilisé Git/GitHub de façon structurée (branches par fonctionnalité, commits réguliers, Pull Requests) afin d’avoir un historique clair, de limiter les retours en arrière et de garder une base de code \textbf{propre}. J’ai également gardé une trace de mes choix et arbitrages (notes / journal), pour \textbf{justifier les décisions} prises au fil du développement.
+
+\section{Bloc 2 — Concevoir et développer une application sécurisée organisée en couches}
+
+\subsection{Analyse des besoins}
+J’ai démarré par l’analyse des besoins des deux profils cibles : le·la propriétaire qui souhaite partager son jardin et le·la jardinier·ère qui cherche un lieu pour jardiner. J’ai transformé ces besoins en \textbf{user stories} et j’ai priorisé avec une approche type \textbf{MoSCoW} afin de protéger le MVP : livrer d’abord ce qui rend l’application utile (\textbf{découverte et réservation}), puis garder pour plus tard les évolutions non bloquantes (messagerie plus avancée, système de valorisation).
+
+\subsection{Architecture logicielle}
+J’ai conçu JardinSolidaire avec une \textbf{architecture en couches}, pour séparer clairement les responsabilités :
+\begin{itemize}
+  \item un front-end Next.js/React pour l’interface ;
+  \item un back-end Express/Node exposant une \textbf{API REST} ;
+  \item une base de données PostgreSQL manipulée via \textbf{Prisma}.
+\end{itemize}
+Dans le back-end, j’ai séparé routes, contrôleurs et logique métier pour garder un code \textbf{lisible}, \textbf{testable} et facile à faire évoluer. L’authentification par token et la gestion des rôles sont intégrées dans ce découpage, afin que les contrôles critiques soient \textbf{systématiques côté serveur}.
+
+\subsection{Conception de la base de données}
+Avant d’implémenter, j’ai modélisé les entités et leurs relations (Utilisateur, Jardin, Réservation, Disponibilité, Favori, Avis, etc.), puis j’ai traduit cette conception dans Prisma pour PostgreSQL. J’ai fait ce travail pour garantir la \textbf{cohérence du modèle} : relations claires, contraintes utiles (unicité de l’e-mail, champs obligatoires), et structure adaptée aux cas d’usage. J’ai également anticipé certains champs nécessaires à la recherche (ville, code postal, type de jardin), afin de \textbf{préparer les évolutions} sans casser la base.
+
+\subsection{Composants d'accès aux données}
+J’ai utilisé l’ORM Prisma comme \textbf{couche d’accès aux données} pour éviter de disperser du SQL dans le code et limiter les erreurs. Les opérations CRUD et les requêtes plus complexes sont regroupées dans des fonctions dédiées (approche \textit{repository}), ce qui \textbf{centralise} la logique d’accès, évite la duplication et facilite la maintenance (optimisations, jointures, pagination).
+
+\subsection{Documentation technique}
+J’ai documenté l’essentiel pour qu’une autre personne puisse comprendre et reprendre le projet : structure du repository (front/back), rôle des dossiers clés, et principaux endpoints de l’API (paramètres attendus, réponses, codes d’erreur). Mon objectif était de rendre l’intégration \textbf{simple} : comprendre rapidement comment appeler l’API et où se situe la logique métier.
+
+\subsection{Stratégie de déploiement}
+J’ai pensé le déploiement en séparant les briques : le front Next.js sur une plateforme type Vercel, API Express déployée séparément, et base de données PostgreSQL gérée à part. Les variables d’environnement (URL DB, secret JWT, CORS, etc.) sont conservées \textbf{hors du code} dans un fichier \texttt{.env}. Cette stratégie me permet d’avoir un environnement local clair et un environnement de production \textbf{plus sûr} (HTTPS, accès restreints, secrets protégés), tout en gardant une architecture de pratiques professionnelles.
+
+\section{Bloc 3 — Préparer le déploiement d'une application sécurisée}
+
+\subsection{Tests de l'application}
+Pour sécuriser l’évolution de JardinSolidaire, j’ai mis en place une stratégie de tests à plusieurs niveaux : \textbf{tests unitaires} pour verrouiller la logique critique, \textbf{tests d’intégration} pour valider certaines routes API, et \textbf{tests end-to-end} pour rejouer les parcours principaux comme une personne utilisatrice.
+
+Je m’en sers comme d’un \textbf{filet de sécurité} : dès que je touche à une partie sensible (réservation, statuts, validations), je relance la suite, et elle s’exécute aussi dans la \textbf{CI}. Ça me permet de repérer une \textbf{régression} immédiatement, et de corriger avant qu’un bug n’arrive en production ou ne se propage dans d’autres fonctionnalités.
+
+\subsection{Documentation et déploiement}
+J’ai rédigé un README complet qui centralise toute la documentation du projet afin qu’il puisse être repris facilement. J’y décris la structure front/back, les prérequis, les variables d’environnement, les commandes clés (installation, migrations Prisma, lancement en local), ainsi qu’une procédure de déploiement pas à pas. L’objectif est simple : permettre à quelqu’un de cloner le dépôt, lancer l’application et la déployer, sans avoir à \og deviner \fg{} les réglages.
+
+\subsection{Démarche DevOps}
+J’ai appliqué une démarche inspirée \textbf{DevOps} : code centralisé sur GitHub, branches par fonctionnalité, et \textbf{intégration continue} via GitHub Actions. Cette automatisation détecte rapidement les problèmes de build, de dépendances ou de configuration. Les secrets (tokens, variables sensibles) restent dans la configuration des plateformes/outils et ne sont \textbf{jamais commités} dans le dépôt.
+
+\section{Éléments transversaux à vérifier}
+
+\subsection{Qualité du code et sécurité}
+J’ai cherché à garder un code \textbf{lisible} et homogène (naming, organisation, indentation) et j’ai utilisé des outils de vérification (linter). Pour la sécurité, j’ai \textbf{hashé les mots de passe}, validé les entrées, empêché les injections SQL via l’ORM, et appliqué les bonnes pratiques de base : permissions par rôle, authentification obligatoire pour les actions sensibles, secrets non exposés dans le repository.
+
+\subsection{Documentation et présentation}
+Le projet est accompagné d’un dossier structuré (contexte, besoins, choix techniques, architecture) et de supports visuels (diagrammes, captures d’écran, extraits de code). Je m’en sers pour montrer la \textbf{cohérence} entre le besoin, la conception et l’implémentation, et pour rendre la soutenance plus concrète.
+
+\subsection{Compétences en anglais}
+J’ai produit un résumé en anglais de JardinSolidaire (objectif, cible, stack, architecture). Une partie de la documentation (README), du nommage et des pratiques Git est également en anglais.
+
+\subsection{Validation des besoins}
+Tout au long du développement, j’ai vérifié que les fonctionnalités livrées répondaient bien au \textbf{besoin initial} : parcours de demande de réservation compréhensible, gestion des disponibilités côté propriétaire, lisibilité des informations côté jardinier·ère. J’ai aussi pris en compte les retours pour ajuster certaines priorités (clarification de formulaires, simplification d’écrans), afin de rester alignée avec un usage réel.
+
+\subsection{Organisation et architecture}
+J’ai organisé l’application en couches : interface (React/Next.js), logique métier (services/contrôleurs), et accès aux données (Prisma/PostgreSQL). Côté front, j’ai structuré par pages et par domaines ; côté back, routes $\rightarrow$ contrôleurs $\rightarrow$ logique métier, pour faciliter les tests, la lisibilité et les évolutions.
+
+\subsection{Modèles de données}
+J’ai produit un modèle conceptuel pour identifier les entités principales et leurs relations, puis je l’ai traduit en schéma technique via Prisma pour générer la base PostgreSQL et suivre l’évolution avec des migrations. Ce lien entre conception et implémentation est \textbf{documenté} pour montrer la cohérence du modèle.
+
+\subsection{Accès aux données}
+J’ai basé l’accès aux données sur Prisma et une approche de type repository : plutôt que manipuler du SQL en plein code, j’appelle des fonctions de haut niveau (\texttt{createBooking}, \texttt{findGardensWithFilters}, etc.). Cela \textbf{limite les erreurs}, centralise la logique, et facilite les optimisations. Cet accès est protégé au niveau du back-end par les contrôles d’authentification et d’autorisation.

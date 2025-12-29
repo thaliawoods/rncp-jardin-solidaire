@@ -1,0 +1,66 @@
+% ===========================
+% 6 Base de données
+% ===========================
+
+\chapter{Base de données}
+
+% --- Réglages images de cette section (plus grandes + espacement texte/image) ---
+\newcommand{\dbimgwidth}{0.95\textwidth}
+
+\section*{De l’idée "métier" à une base réelle : MCD puis MLD}
+
+Avant d’implémenter la base de données, j’ai commencé par \textbf{modéliser} les informations de JardinSolidaire. L’objectif est de ne pas créer des tables "au hasard", mais de construire une base qui reflète les besoins du projet : \textbf{créer un compte}, \textbf{publier un jardin}, \textbf{proposer des créneaux}, \textbf{réserver}, \textbf{échanger}, puis éventuellement \textbf{laisser un avis}.
+
+Pour cela, j’ai d’abord réalisé un \textbf{MCD} (\textbf{Modèle Conceptuel de Données}). Le MCD est une vue "métier" : il décrit ce que l’application doit manipuler, sans entrer dans les détails techniques. On y liste les grandes \textbf{entités} du projet et leurs liens. Une entité correspond à un type d’objet important dans l’application. Dans JardinSolidaire, on retrouve notamment : \textbf{utilisateur}, \textbf{jardin}, \textbf{créneau de disponibilité}, \textbf{réservation}, \textbf{messagerie} et \textbf{avis}. Selon les besoins, on peut aussi ajouter des entités comme les \textbf{favoris} ou des tables de liaison.
+
+Sur le MCD, chaque bloc représente une entité et chaque lien représente une \textbf{relation}. C’est à cette étape que l’on clarifie des règles simples mais essentielles. Par exemple : un propriétaire peut posséder plusieurs jardins, mais un jardin n’a qu’un seul propriétaire. Un jardin peut proposer plusieurs créneaux de disponibilité, et une réservation relie un jardinier à un jardin sur un créneau précis. Les avis, eux, doivent rester rattachés à une interaction réelle pour conserver un système de confiance cohérent.
+
+Le MCD est donc un outil de \textbf{vérification} : il permet de vérifier que le modèle correspond bien au parcours utilisateur et de repérer tôt les incohérences. Par exemple, sans entité "créneau", il est difficile de construire un calendrier clair ; et si l’on mélange "créneau" et "réservation" dans une seule table, la logique devient plus confuse et le risque de conflits augmente.
+\vspace{\dbspacebefore}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\dbimgwidth]{assets/06_base_de_données/mcd.png}
+  \caption{MCD — vue métier des entités et de leurs relations.}
+  \label{fig:js-db-mcd}
+\end{figure}
+\vspace{\dbspaceafter}
+
+Une fois le MCD validé, j’ai dérivé un \textbf{MLD} (\textbf{Modèle Logique de Données}). Le MLD est plus proche de l’implémentation : on passe du concept au concret. Chaque entité devient une table, et on précise comment la base va garantir l’intégrité des données.
+
+Dans un MLD, on définit notamment :
+\begin{itemize}
+  \item les \textbf{clés primaires}, c’est-à-dire l’identifiant unique d’une ligne de table. Par exemple, une réservation a un identifiant unique qui permet de la retrouver sans ambiguïté ;
+  \item les \textbf{clés étrangères}, c’est-à-dire des champs qui pointent vers une autre table pour créer un lien. Par exemple, une réservation contient l’identifiant de l’utilisateur et l’identifiant du jardin (et/ou du créneau) pour savoir qui a réservé quoi ;
+  \item les \textbf{contraintes}, qui sont des règles imposées par la base. Une contrainte classique est l’unicité de l’\textbf{e-mail} : cela évite d’avoir deux comptes avec la même adresse. On peut aussi imposer que certains champs soient obligatoires (par exemple un jardin doit avoir un titre), ou que certains statuts appartiennent à une liste précise.
+\end{itemize}
+
+On retrouve aussi la notion de \textbf{cardinalité}, qui décrit le nombre possible de relations. Par exemple, "un propriétaire $\rightarrow$ plusieurs jardins" est une cardinalité de type \textbf{1-n}. Cela aide à construire la base correctement et à éviter des relations impossibles ou ambiguës.
+
+Le MLD joue alors le rôle de \textbf{contrat} : c’est ce schéma qui m’a guidée pour créer une base PostgreSQL cohérente et pour implémenter les mêmes relations dans Prisma. Grâce à cette démarche, ce qui est modélisé côté métier se retrouve bien dans la base réelle, et donc dans le comportement de l’application.
+
+\vspace{\dbspacebefore}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\dbimgwidth]{assets/06_base_de_données/mld.png}
+  \caption{MLD - traduction en tables, clés et relations (proche de l’implémentation).}
+  \label{fig:js-db-mld}
+\end{figure}
+\vspace{\dbspaceafter}
+
+\newpage
+\section*{Pourquoi PostgreSQL ?}
+\addcontentsline{toc}{section}{Pourquoi PostgreSQL ?}
+
+J’ai choisi \textbf{PostgreSQL} parce que JardinSolidaire manipule des données \textbf{structurées} et \textbf{fortement liées} : utilisateurs, jardins, créneaux, réservations, messages, avis... Une base relationnelle me permet de modéliser ces liens proprement (clés étrangères, contraintes), et donc d’éviter des incohérences dès l’écriture en base.
+
+Ce choix est surtout motivé par la fonctionnalité la plus sensible du projet : la \textbf{réservation}. Quand un utilisateur réserve, je dois garantir que l’opération est \textbf{fiable}, même si deux personnes agissent en même temps. Avec PostgreSQL, je peux m’appuyer sur des \textbf{transactions} et sur ses garanties \textbf{ACID} pour sécuriser ces écritures.
+
+\textbf{ACID} décrit quatre garanties que j’utilise concrètement dans le projet :
+\begin{itemize}
+  \item \textbf{Atomicité} : une action critique s’exécute entièrement ou pas du tout. Par exemple, lors d’une réservation, je veux éviter un état incohérent où la réservation est créée mais le créneau reste \og libre \fg{} (ou l’inverse).
+  \item \textbf{Cohérence} : les règles définies restent respectées. Par exemple, une réservation ne peut pas référencer un jardin inexistant, et les contraintes (formats, unicité, relations) restent valides après l’opération.
+  \item \textbf{Isolation} : deux opérations simultanées n’interfèrent pas. C’est crucial si deux personnes tentent de réserver le même créneau au même moment : je veux une seule réservation valide, et un état final clair.
+  \item \textbf{Durabilité} : une fois validée, l’écriture est persistée. Même en cas de redémarrage ou de panne, la donnée confirmée reste enregistrée.
+\end{itemize}
+
+Enfin, PostgreSQL s’intègre très bien avec \textbf{Prisma} et \textbf{Docker}. Ça me permet de travailler en local avec une base simple à lancer, et de garder une configuration proche de celle du déploiement : c’est plus reproductible et plus stable.

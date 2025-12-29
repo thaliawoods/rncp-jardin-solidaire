@@ -1,0 +1,342 @@
+% ===========================
+% 10. Développement
+% ===========================
+
+\chapter{Développement}
+
+\section*{Structure Front-End}
+\addcontentsline{toc}{section}{Structure Front-End}
+
+Pour ce zoom technique, j’ai choisi de me concentrer sur la réservation, car c’est une \textbf{fonctionnalité clé} de JardinSolidaire : c’est elle qui transforme une intention ("j’aimerais aider dans ce jardin") en action concrète ("j’ai un créneau validé, je sais quand venir, et je peux échanger").
+
+J’ai développé le front avec \textbf{Next.js} et j’ai structuré ce \textbf{parcours critique} autour de deux pages : une vue d’ensemble, puis un détail. J’ai donc créé \texttt{/bookings/page.js} pour l’écran "Mes réservations" (liste sous forme de cartes avec jardin, date/heure et statut), et \texttt{/bookings/[id]} pour afficher le détail d’une réservation sélectionnée.
+
+Comme on le voit sur la Figure~\ref{fig:dev-structure-front}, cette organisation me permet de séparer clairement ce qui relève de l’orchestration de page (récupérer et afficher des données), de ce qui relève de l’interface (\textbf{composants réutilisables}). J’ai choisi ce découpage parce qu’il rend le code plus lisible, et parce qu’il facilite l’évolution du parcours sans multiplier la duplication.
+
+\vspace{\dbspacebefore}
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{assets/10_développement/structure_front.png}
+\caption{Organisation front-end autour des pages \texttt{/bookings} et \texttt{/bookings/[id]} et des composants réutilisables.}
+\label{fig:dev-structure-front}
+\end{figure}
+
+Autour de ces pages, j’ai découpé l’interface en composants réutilisables (cartes, badges de statut, actions, planning) pour éviter la duplication et garder une UI cohérente. J’ai aussi centralisé la communication avec le back-end dans \texttt{lib/bookings.js} plutôt que de retrouver des \texttt{fetch} disséminés partout : je garde des appels homogènes, un code plus lisible, et une maintenance plus simple quand le parcours évolue.
+
+\newpage
+
+\section*{Pages Front-End : liste et détail}
+\addcontentsline{toc}{section}{Pages Front-End : liste et détail}
+
+Sur la page \texttt{/bookings/page.js}, j’ai fait en sorte que l’utilisateur·ice retrouve immédiatement ses informations. Au chargement, je récupère les réservations de l’utilisateur·ice connecté·e via l’API, puis je stocke le résultat dans le \texttt{state} pour afficher la liste. J’ai choisi d’expliciter les \textbf{états de chargement et d’erreur} afin que le comportement reste lisible : soit on voit que ça charge, soit on comprend pourquoi ça n’a pas abouti (Figure~\ref{fig:dev-bookings-page-fetch-state-error}).
+
+\vspace{\dbspacebefore}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{assets/10_développement/code_bookings_page_fetch_state_error.png}
+\caption{\texttt{/bookings/page.js} }
+\label{fig:dev-bookings-page-fetch-state-error}
+\end{figure}
+\vspace{\dbspaceafter}
+
+Au-delà du fetch, j’ai ajouté des signaux concrets pour guider l’utilisateur·ice : un \textbf{fallback de chargement} au niveau de la page, un message de succès après création (paramètre \texttt{created=1}), et un état "liste vide". J’ai fait ce choix pour éviter les pages "silencieuses" : même si l’API est lente ou si l’utilisateur·ice n’a encore rien réservé, l’interface explique ce qu’il se passe (Figures~\ref{fig:dev-bookings-page-ui-states1234}).
+
+\vspace{\dbspacebefore}
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth]{assets/10_développement/code_bookings_page_ui_states1.png}\par\smallskip
+\includegraphics[width=0.9\textwidth]{assets/10_développement/code_bookings_page_ui_states2.png}\par\smallskip
+\includegraphics[width=1\textwidth]{assets/10_développement/code_bookings_page_ui_states3.png}\par\smallskip
+\includegraphics[width=1\textwidth]{assets/10_développement/code_bookings_page_ui_states4.png}
+\caption{\texttt{/bookings/page.js}}
+\label{fig:dev-bookings-page-ui-states1234}
+\end{figure}
+
+\newpage
+
+Sur la page \texttt{/bookings/[id]}, j’ai utilisé une route dynamique pour accéder au détail d’une réservation. Je récupère l’identifiant dans l’URL via \texttt{useParams}, puis je charge la réservation correspondante et j’affiche les informations utiles (créneau, statut, actions disponibles). Ce choix permet à l’utilisateur·ice de passer de la vue liste à une vue \textbf{actionnable} (Figure~\ref{fig:dev-booking-detail-route-fetch}).
+
+\vspace{\dbspacebefore}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{assets/10_développement/code_booking_detail_route_fetch.png}
+\caption{\texttt{/bookings/[id]}}
+\label{fig:dev-booking-detail-route-fetch}
+\end{figure}
+\vspace{\dbspaceafter}
+
+Enfin, quand l’utilisateur·ice déclenche une action, j’envoie une requête \texttt{PATCH} au back-end. J’ai choisi ce fonctionnement pour garantir un affichage \textbf{fiable} : je ne "devine" pas l’état localement, je mets à jour le \texttt{state} uniquement avec la réservation renvoyée par l’API, afin d’éviter tout décalage d’affichage.
+
+\newpage
+
+\section*{Composants}
+\addcontentsline{toc}{section}{Composants}
+
+Pour garder le code front lisible et éviter la duplication, j’ai regroupé les actions de réservation (\texttt{confirmer, annuler, terminer}) dans une configuration unique, pilotées par un seul handler. Mon objectif était d’avoir un comportement \textbf{cohérent} quelle que soit l’action, et de pouvoir ajouter ou modifier une action sans réécrire toute la logique.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{assets/10_développement/code_booking_detail_actions_patch_state1.png}
+\caption{\texttt{/bookings/[id]} : liste d’actions explicite, facile à faire évoluer.}
+\label{fig:dev-booking-detail-actions-patch-state1}
+\end{figure}
+
+Le flux reste simple : \textbf{clic utilisateur $\rightarrow$ appel API $\rightarrow$ récupération de la réservation mise à jour $\rightarrow$ rafraîchissement de l’interface.}
+
+J’ai centralisé l’exécution dans une seule fonction (\texttt{doAction}) : elle gère l’appel API, l’état de chargement (\texttt{busy}) et la mise à jour de l’interface uniquement à partir de la réponse serveur (Figure~\ref{fig:dev-booking-detail-actions-patch-state2}). J’ai choisi ce modèle parce qu’il limite les cas incohérents et garantit que l’UI reflète toujours la \textbf{réalité serveur} côté back-end.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\textwidth]{assets/10_développement/code_booking_detail_actions_patch_state2.png}
+\caption{\texttt{/bookings/[id]}}
+\label{fig:dev-booking-detail-actions-patch-state2}
+\end{figure}
+
+En procédant ainsi, je m’assure que l’UI reflète toujours l’état renvoyé par le serveur, plutôt que d’essayer de "deviner" localement. J’ai aussi fait le choix de garder le front \textbf{léger} : il affiche l’état, propose les actions, et réagit aux réponses. Les règles métier (cohérence, conflits, rôles) et les autorisations restent côté back-end, ce qui évite qu’un contournement côté client puisse casser la logique.
+
+J’ai isolé l’affichage du statut dans un composant dédié, pour garder une UI \textbf{homogène} entre la liste et le détail, et éviter de répéter la logique d’affichage à plusieurs endroits (Figure~\ref{fig:dev-component-status-badge}).
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{assets/10_développement/code_component_booking_status_badge.png}
+\caption{\texttt{BookingStatusBadge}}
+\label{fig:dev-component-status-badge}
+\end{figure}
+\newpage
+
+Enfin, j’ai intégré des points d’accessibilité : labels HTML sur les champs, focus visible et messages d’erreur compréhensibles, pour que l’utilisateur·ice comprenne toujours ce qu'il se passe. Concrètement, sur la page \texttt{/bookings/new}, chaque champ est présenté avec un libellé explicite, et l’utilisateur·ice reçoit un retour clair en cas d’erreur ou de créneau indisponible (Figures~\ref{fig:dev-bookings-new-a11y-feedback}).
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{assets/10_développement/code_new_booking_form_a11y_errors1.png}\par\smallskip
+\includegraphics[width=0.5\textwidth]{assets/10_développement/code_new_booking_form_a11y_errors2.png}\par\smallskip
+\includegraphics[width=0.6\textwidth]{assets/10_développement/code_new_booking_check_feedback_disable.png}
+\caption{\texttt{/bookings/new}}
+\label{fig:dev-bookings-new-a11y-feedback}
+\end{figure}
+
+\newpage
+
+\section*{Connexion au Back-End}
+\addcontentsline{toc}{section}{Connexion au Back-End}
+
+Pour éviter de disperser des \texttt{fetch} dans chaque page et garantir un comportement constant, j’ai \textbf{centralisé} tous les appels à l’API dans \texttt{lib/bookings.js}. J’ai choisi ce point d’entrée unique parce qu’il me permet de réutiliser la même logique partout : si l’API évolue (URL, headers, format d’erreur), je n’ai qu’un seul fichier à maintenir (Figure~\ref{fig:dev-bookings-api-layer}).
+
+\vspace{\dbspacebefore}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{assets/10_développement/code_lib_bookings_api_layer.png}
+\caption{\texttt{lib/bookings.js}}
+\label{fig:dev-bookings-api-layer}
+\end{figure}
+\vspace{\dbspaceafter}
+
+Chaque action métier passe ensuite par une fonction dédiée (\texttt{createBooking}, \texttt{getMyBookings}, \texttt{getBooking}, \texttt{updateBooking}, etc.) : cela me permet d’appeler clairement l’intention depuis les pages, sans mélanger UI et détails réseau (Figure~\ref{fig:dev-bookings-api-functions}).
+
+\vspace{\dbspacebefore}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{assets/10_développement/code_lib_bookings_api_functions.png}
+\caption{Fonctions dédiées par action}
+\label{fig:dev-bookings-api-functions}
+\end{figure}
+\vspace{\dbspaceafter}
+
+\newpage
+
+J’ai aussi créé deux helpers transverses pour rendre les appels homogènes. Avec \texttt{authHeaders()}, j’ajoute automatiquement le token JWT dans le header \texttt{Authorization} au format \texttt{Bearer \textless token\textgreater}. J’ai choisi ce mécanisme pour éviter les oublis et sécuriser l’accès aux routes protégées (Figure~\ref{fig:dev-bookings-api-layer}).
+
+Avec \texttt{handle(res)}, je centralise le traitement des réponses : parsing JSON, gestion d’erreurs et message cohérent côté interface. L’objectif est que l’utilisateur·ice reçoive un retour clair quel que soit l’écran, tout en gardant le front \textbf{léger} (Figure~\ref{fig:dev-bookings-api-layer}).
+
+\vspace{\dbspacebefore}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth]{assets/10_développement/code_lib_bookings_canbook.png}
+\caption{\texttt{canBook}}
+\label{fig:dev-canbook-server-check}
+\end{figure}
+\vspace{\dbspaceafter}
+
+Enfin, j’ai séparé explicitement les endpoints "gardener" et "owner" dans ce même fichier (\texttt{/me}, \texttt{/can-book}, \texttt{/inbox}, \texttt{/confirm}, \texttt{/cancel}). J’ai fait ce choix pour rendre la lecture plus évidente : on voit tout de suite quelles routes correspondent à quel rôle, et on évite de mélanger des permissions différentes dans les pages (Figure~\ref{fig:dev-owner-endpoints}).
+
+\vspace{\dbspacebefore}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth]{assets/10_développement/code_lib_bookings_owner_endpoints.png}
+\caption{Séparation des endpoints "owner"}
+\label{fig:dev-owner-endpoints}
+\end{figure}
+\vspace{\dbspaceafter}
+\newpage
+
+\section*{Structure Back-End}
+\addcontentsline{toc}{section}{Structure Back-End}
+
+Côté back-end, j’ai structuré la réservation autour de deux ensembles de routes, parce que je voulais séparer clairement \textbf{la demande de réservation} et \textbf{la gestion des créneaux}. Comme on le voit sur la Figure~\ref{fig:dev-structure-back}, j’ai regroupé tout ce qui concerne les réservations dans \texttt{routes/bookings.js} (création, liste \og mes réservations \fg{}, consultation, mise à jour de statut et actions côté propriétaire comme confirmer ou annuler). J’ai isolé la gestion des disponibilités dans \texttt{routes/availability.js}, pour garder une logique lisible : un créneau se crée et se consulte indépendamment, puis une réservation vient s’y rattacher.
+
+Pour sécuriser l’API, j’ai protégé les routes avec un middleware d’authentification (\texttt{requireAuth}). Il lit le token JWT, vérifie qu’il est valide, puis attache l’utilisateur·ice à la requête (\texttt{req.user}). Ensuite, dans les contrôleurs, je peux appliquer les autorisations et les règles métier côté serveur, sans dépendre de ce que le front envoie (voir Figure~\ref{fig:dev-structure-back}).
+
+\vspace{\dbspacebefore}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1\textwidth]{assets/10_développement/structure_back.png}
+  \caption{Organisation back-end}
+  \label{fig:dev-structure-back}
+\end{figure}
+\vspace{\dbspaceafter}
+
+\newpage
+
+\section*{Contrôleur de création}
+\addcontentsline{toc}{section}{Contrôleur de création}
+
+Pour la création d’une réservation, j’ai mis en place une logique stricte, parce que c’est l’endroit où l’on peut facilement introduire des conflits. Mon objectif côté serveur est simple : empêcher qu’un même créneau soit réservé deux fois, et garantir que l’état enregistré reste cohérent.
+
+Le contrôleur suit donc toujours le même enchaînement : je sécurise l’accès, je valide les données, je vérifie qu’il n’y a pas de conflit, puis seulement ensuite j’enregistre. Concrètement, la route \texttt{POST /api/bookings} est protégée par \texttt{requireAuth} et se structure en deux branches selon le payload : réservation d’un slot existant (\texttt{slotId}) ou réservation à partir d’une plage horaire (\texttt{gardenId/startsAt/endsAt}) (Figure~\ref{fig:code_backend_bookings_post_overview}).
+
+\vspace{\dbspacebefore}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.6\textwidth]{assets/10_développement/code_backend_bookings_post_overview1.png}\par\smallskip
+  \includegraphics[width=0.6\textwidth]{assets/10_développement/code_backend_bookings_post_overview2.png}
+  \caption{\texttt{POST /api/bookings} : route protégée, puis branchement entre réservation d’un slot existant (\texttt{slotId}) et création depuis une plage horaire (\texttt{gardenId/startsAt/endsAt}).}
+  \label{fig:code_backend_bookings_post_overview}
+\end{figure}
+\vspace{\dbspaceafter}
+
+J’ai prévu deux cas d’usage. Dans le premier, l’utilisateur·ice réserve un créneau existant : je vérifie que le slot existe, qu’il est encore libre (\texttt{status = free}), puis je contrôle qu’il ne chevauche pas une réservation déjà active. Si un conflit est détecté, je bloque la création avec un \texttt{409} : c’est explicite et compréhensible côté front (Figure~\ref{fig:code_backend_bookings_mode1_validation_conflict}).
+
+\vspace{\dbspacebefore}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.8\textwidth]{assets/10_développement/code_backend_bookings_mode1_validation_conflict.png}
+  \caption{Validation et anti-conflit}
+  \label{fig:code_backend_bookings_mode1_validation_conflict}
+\end{figure}
+\vspace{\dbspaceafter}
+
+Dans le second, l’utilisateur·ice propose une plage horaire : je valide la cohérence des dates (début < fin, pas dans le passé) puis je fais le même contrôle de chevauchement avant d’autoriser la création. Là aussi, l’objectif est d’empêcher qu’un créneau "passe" si la base indique déjà une réservation active (Figure~\ref{fig:dev-bookings-mode2-validation}).
+
+\vspace{\dbspacebefore}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.8\textwidth]{assets/10_développement/code_backend_bookings_mode2_validation_conflict.png}
+  \caption{Mode "plage horaire"}
+  \label{fig:dev-bookings-mode2-validation}
+\end{figure}
+\vspace{\dbspaceafter}
+
+\newpage
+
+Pour rendre la détection robuste et réutilisable, je centralise la logique de conflit dans des helpers : je reconstruis une plage horaire "réelle" à partir d’un slot (\texttt{date + startTime/endTime}), puis je teste le recouvrement de manière explicite. J’ai choisi cette approche pour éviter de dupliquer des conditions dans les routes et pour garder un comportement identique partout (Figure~\ref{fig:dev-bookings-conflict-helpers}).
+
+\vspace{\dbspacebefore}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1\textwidth]{assets/10_développement/code_backend_bookings_conflict_helpers1.png}\par\smallskip
+  \includegraphics[width=1\textwidth]{assets/10_développement/code_backend_bookings_conflict_helpers2.png}
+  \caption{Helpers anti-chevauchement : conversion slot $\rightarrow$ plage horaire (\texttt{buildRangeFromSlot}), test de recouvrement (\texttt{rangesOverlap}) et détection de conflit (\texttt{hasConflictJS}).}
+  \label{fig:dev-bookings-conflict-helpers}
+\end{figure}
+\vspace{\dbspaceafter}
+
+\newpage
+
+Dans les deux cas, j’utilise une \textbf{transaction Prisma} : soit toutes les opérations réussissent, soit rien n’est écrit en base. Ce choix évite les états incohérents (par exemple un slot marqué "booked" sans booking créé, ou l’inverse) et rend le système fiable, même en cas d’erreur ou de concurrence.
+
+Dans le mode "slot existant", je mets à jour le slot puis je crée la réservation dans la même transaction, ce qui garantit l’atomicité de l’opération (Figure~\ref{fig:dev-bookings-mode1-transaction}).
+
+\vspace{\dbspacebefore}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1\textwidth]{assets/10_développement/code_backend_bookings_mode1_transaction.png}
+  \caption{Transaction Prisma (mode “slot existant”) : mise à jour du slot (\texttt{status=booked}) puis création de la réservation (\texttt{status=pending}) en tout-ou-rien.}
+  \label{fig:dev-bookings-mode1-transaction}
+\end{figure}
+\vspace{\dbspaceafter}
+
+Dans le mode "plage horaire", je crée d’abord le slot, puis la réservation liée, toujours dans une transaction unique. J’ai fait ce choix pour garantir qu’on ne puisse jamais se retrouver avec un slot "réservé" sans réservation associée, ou l’inverse (Figure~\ref{fig:dev-bookings-mode2-transaction}).
+
+\vspace{\dbspacebefore}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1\textwidth]{assets/10_développement/code_backend_bookings_mode2_transaction.png}
+  \caption{Transaction Prisma (mode “plage horaire”)}
+  \label{fig:dev-bookings-mode2-transaction}
+\end{figure}
+\vspace{\dbspaceafter}
+
+\newpage
+
+\section*{Modèles Prisma}
+\addcontentsline{toc}{section}{Modèles Prisma}
+
+Pour rendre la réservation fiable, j’ai structuré les données autour de deux notions métier distinctes : le créneau (\texttt{AvailabilitySlot}) et la réservation (\texttt{Booking}). J’ai fait ce choix pour éviter de mélanger "offre" et "demande" dans une seule table, ce qui rendrait la logique plus ambiguë et plus difficile à sécuriser.
+
+\texttt{AvailabilitySlot} représente l’offre : un créneau appartient à un jardin, décrit une plage horaire (date + heure de début/fin), et porte un statut (\texttt{free/booked/unavailable}). \texttt{Booking} représente la demande : il relie un·e utilisateur·ice à un jardin et à un créneau, avec un statut de suivi (en attente, confirmé, annulé, terminé) et, si besoin, un message (\texttt{notes}). Cette séparation apparaît clairement dans le schéma Prisma : le slot peut vivre "en tant qu’offre", et la réservation vient s’y rattacher lorsqu’une demande est faite (Figure~\ref{fig:prisma-slot-booking}).
+
+\vspace{\dbspacebefore}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1\textwidth]{assets/10_développement/code_prisma_availabilityslot_booking_1.png}\par\smallskip
+  \includegraphics[width=1\textwidth]{assets/10_développement/code_prisma_availabilityslot_booking_2.png}
+  \caption{Modèles Prisma \texttt{AvailabilitySlot} et \texttt{Booking}}
+  \label{fig:prisma-slot-booking}
+\end{figure}
+\vspace{\dbspaceafter}
+
+Cette séparation me sert à deux niveaux. Côté interface, elle simplifie les affichages : je peux lister des créneaux disponibles sans mélanger l’historique des demandes, et afficher "mes réservations" comme un suivi d’actions et de statuts. Côté serveur, elle rend la règle métier très claire : je ne crée une réservation que si le créneau est encore libre et sans conflit au moment où j’écris en base, ce qui limite les doublons et garantit la cohérence.
+
+\newpage
+
+\section*{Sécurité et autorisations}
+\addcontentsline{toc}{section}{Sécurité et autorisations}
+
+J’ai construit la sécurité de l’API autour d’un principe simple : \textbf{ne jamais faire confiance au client}. Même si l’interface masque certains boutons, un utilisateur peut toujours tenter d’appeler l’API directement. Mon objectif était donc que les contrôles critiques soient faits côté serveur, au même endroit et de façon systématique.
+
+J’ai d’abord mis en place une authentification par \textbf{JWT}. À chaque requête protégée, le middleware lit le header \texttt{Authorization}, vérifie la signature du token et récupère l’utilisateur authentifié via \texttt{req.user}. Si le token est absent, mal formé ou invalide, je renvoie \texttt{401 Unauthorized} et la route ne s’exécute pas (Figure~\ref{fig:security-auth-middleware}).
+
+\vspace{\dbspacebefore}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.6\textwidth]{assets/10_développement/code_backend_auth_middleware_1.png}\par\smallskip
+  \includegraphics[width=0.6\textwidth]{assets/10_développement/code_backend_auth_middleware_2.png}
+  \caption{Middleware d’authentification JWT.}
+  \label{fig:security-auth-middleware}
+\end{figure}
+\vspace{\dbspaceafter}
+
+Pour protéger les comptes, j’ai hashé les mots de passe avec \texttt{bcrypt} afin qu’aucun mot de passe lisible ne soit stocké en base. J’ai aussi configuré une expiration des JWT pour limiter l’impact si un token est compromis.
+
+Ensuite, au-delà du fait d’être connecté·e, j’ai vérifié les \textbf{autorisations} sur chaque action sensible. Je contrôle côté serveur qu’un·e utilisateur·ice ne modifie que ses propres réservations : si l’\texttt{id} de la réservation n’appartient pas à \texttt{req.user.id}, je renvoie \texttt{403 Forbidden} (Figure~\ref{fig:security-authorization-self-booking}).
+
+\vspace{\dbspacebefore}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.6\textwidth]{assets/10_développement/code_backend_booking_authorization_self.png}
+  \caption{Autorisation côté serveur : une personne ne peut agir que sur ses propres réservations.}
+  \label{fig:security-authorization-self-booking}
+\end{figure}
+\vspace{\dbspaceafter}
+
+De la même manière, j’ai sécurisé les actions "propriétaire" : un·e propriétaire ne peut confirmer ou annuler que des réservations liées à ses propres jardins. Je récupère le \texttt{ownerUserId} du jardin, je le compare à \texttt{req.user.id}, et si ça ne correspond pas, je renvoie \texttt{403 Forbidden}. Ce contrôle protège le système même si quelqu’un tente d’appeler l’endpoint manuellement (Figure~\ref{fig:security-authorization-owner-actions}).
+
+\vspace{\dbspacebefore}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.6\textwidth]{assets/10_développement/code_backend_booking_authorization_owner.png}
+  \caption{Autorisation côté serveur (actions propriétaire) : contrôle strict du lien jardin $\rightarrow$ propriétaire.}
+  \label{fig:security-authorization-owner-actions}
+\end{figure}
+\vspace{\dbspaceafter}
+
+Enfin, j’ai ajouté des validations d’entrée (formats, cohérence des dates) et des réponses d’erreur explicites (\texttt{400}, \texttt{404}, \texttt{409}) pour que le front puisse afficher des messages compréhensibles et que l’utilisateur·ice sache exactement ce qui bloque. Par exemple, je renvoie \texttt{400} si les paramètres sont invalides, \texttt{404} si une ressource n’existe pas, et \texttt{409} en cas de conflit de créneau : c’est ce qui permet d’afficher un retour clair côté interface plutôt qu’une erreur générique (Figure~\ref{fig:security-errors-validation}).
+
+\vspace{\dbspacebefore}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.6\textwidth]{assets/10_développement/code_backend_validation_errors.png}
+  \caption{Validations et codes d’erreur : réponses explicites pour guider l’interface et éviter les échecs silencieux.}
+  \label{fig:security-errors-validation}
+\end{figure}
+\vspace{\dbspaceafter}

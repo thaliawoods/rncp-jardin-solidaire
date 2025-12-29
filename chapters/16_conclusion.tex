@@ -1,0 +1,17 @@
+\chapter{Conclusion}
+
+JardinSolidaire répond à un besoin très concret : faire revivre des jardins sous-utilisés en les mettant en lien avec des personnes qui ont envie de jardiner, d’apprendre et de donner un coup de main. Derrière cette idée simple, il y a des enjeux importants : recréer du lien de proximité, faciliter la transmission de savoir-faire, et redonner une place au vivant, même en ville. L’objectif n’est pas de créer un service marchand, mais un outil d’entraide, où l’échange repose surtout sur le temps, la coopération et la confiance.
+
+Ce projet a été une vraie montée en compétences, parce qu’il m’a obligée à aller au bout des choses, comme dans un contexte pro. J’ai appris à partir d’un besoin réel, à le clarifier, puis à le traduire en parcours utilisateurs et en fonctionnalités cohérentes. J’ai aussi dû faire des choix : définir un périmètre atteignable, prioriser, et accepter que tout ne pouvait pas être fait de suite, tant que le socle n’était pas solide.
+
+Un point central a été de construire une logique métier fiable autour de la réservation : qui peut réserver, dans quelles conditions, comment éviter les conflits de créneaux, et comment suivre l’évolution d’une demande (en attente, confirmée, annulée, etc.). C’est ce type de règles qui fait la différence entre une démo et une application qui tient dans le temps. J’ai dû bien modéliser les données et structurer la base PostgreSQL via Prisma, afin d’éviter les incohérences et de préparer les évolutions futures.
+
+Sur le plan technique, j’ai mis en place une architecture full-stack complète. Cela m’a permis de travailler comme sur un vrai produit : organiser le code, séparer les responsabilités, gérer les erreurs proprement, et construire une API claire côté serveur.
+
+J’ai aussi beaucoup travaillé la sécurité, avec une approche "zéro confiance" : ne jamais supposer qu’une requête est légitime juste parce que l’utilisateur est connecté. Concrètement, ça veut dire authentifier, vérifier les autorisations, valider les données reçues, et renvoyer des erreurs explicites quand une action n’est pas permise. 
+
+Enfin, j’ai progressé sur la qualité et la fiabilité : tests unitaires, tests d’intégration et end-to-end, puis CI/CD et déploiement. L’intégration continue m’a appris à travailler avec des "filets de sécurité", et le déploiement m’a forcée à rendre l’application reproductible et stable. Au final, ça m’a aidée à limiter les régressions et à livrer plus sereinement.
+
+Aujourd’hui, JardinSolidaire est un MVP fonctionnel (\textit{Minimum Viable Product}) : une première version utilisable qui couvre le cœur du produit. Cette base est suffisamment solide pour commencer à tester le service en conditions réelles, avec des habitants, des associations ou des initiatives locales. L’idée est simple : confronter le produit à de vrais usages, récolter des retours, et améliorer à partir de situations concrètes.
+
+Pour finir, ce projet est pour moi une démonstration de ma capacité à mener une application de bout en bout : comprendre un besoin, concevoir des parcours, structurer une architecture, poser des règles métier, sécuriser, tester, déployer et itérer. Et il ouvre naturellement sur la suite : continuer à construire des outils utiles, simples à utiliser, et pensés pour les gens qui vont vraiment s’en servir. 

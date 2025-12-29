@@ -1,0 +1,108 @@
+% ===========================
+% 7. Spécifications techniques du projet
+% ===========================
+
+\chapter{Spécifications techniques du projet}
+
+\section*{Choix technologiques}
+\addcontentsline{toc}{section}{Choix technologiques}
+
+Pour construire JardinSolidaire, j’ai choisi une stack web moderne, organisée \og en couches \fg{}. Une \textbf{architecture en couches} signifie que l’on sépare clairement les responsabilités.
+
+La première couche est l’\textbf{interface}, c’est-à-dire tout ce que l’utilisateur voit et manipule dans son navigateur : les pages, les formulaires, les boutons, les listes, la carte, etc.
+
+La deuxième couche est la \textbf{logique métier} : c’est le cerveau de l’application. Elle décide si une action est autorisée, applique les règles, vérifie les données et construit les réponses. Cette couche est portée par une \textbf{API}, c’est-à-dire un serveur qui reçoit des requêtes et renvoie des données.
+
+La troisième couche est la \textbf{persistance des données} : c’est la \textbf{base de données}, l’endroit où l’on stocke durablement les informations (utilisateurs, jardins, créneaux, réservations, messages\ldots).
+
+Cette séparation est importante parce qu’elle rend le projet plus facile à faire évoluer. Si je change l’interface, je n’ai pas besoin de toucher aux règles métier. Cela facilite aussi les tests : on peut tester l’API sans lancer tout le front, et inversement. Enfin, cela rend la maintenance plus simple, car chaque partie a un rôle clair.
+
+\newcommand{\archicoucheswidth}{0.70}
+
+\vspace{\dbspacebefore}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\archicoucheswidth\textwidth]{assets/07_specifications_techniques/archi_couches.png}
+  \caption{Architecture en couches - séparation interface, logique métier et données.}
+  \label{fig:js-archi-couches}
+\end{figure}
+\vspace{\dbspaceafter}
+
+\section*{Front-end : React / Next.js}
+\addcontentsline{toc}{section}{Front-end : React / Next.js}
+
+J’ai développé le front-end avec \textbf{Next.js} (basé sur \textbf{React}) parce que l’application contient beaucoup d’écrans dynamiques : une liste de jardins avec filtres, des pages de détail, des profils, et des parcours de réservation. Construire l’interface en composants m’a permis de réutiliser des blocs d’UI (cartes, badges de statuts, formulaires) au lieu de dupliquer du code, ce qui réduit les incohérences et accélère les évolutions.
+
+Next.js m’a aussi apporté une structure très claire grâce au routing par fichiers : les routes comme \texttt{/gardens} ou \texttt{/bookings/[id]} sont directement lisibles dans l’arborescence du projet. Enfin, j’ai choisi Next.js parce qu’il permet de \textbf{pré-rendre} certaines pages (côté serveur ou en statique), ce qui améliore la rapidité d’affichage et le \textbf{référencement} (\textbf{SEO}) si l’on souhaite rendre un jour certaines pages publiques. Couplé à son intégration avec \textbf{Vercel}, cela simplifie le déploiement et les mises à jour du front.
+
+\section*{Back-end : Node.js / Express}
+\addcontentsline{toc}{section}{Back-end : Node.js / Express}
+
+Le back-end de JardinSolidaire est une \textbf{API REST} développée en \textbf{Node.js} avec \textbf{Express}. J’ai choisi cette stack parce qu’elle est légère, très documentée, et qu’elle me permet de garder une structure simple et lisible : des \textbf{routes} (endpoints), des \textbf{contrôleurs} (traitement), et des \textbf{middlewares} (vérifications transverses).
+
+J’ai exposé les fonctionnalités via des routes HTTP (par exemple pour lister des jardins ou créer une réservation) et j’ai renvoyé des réponses standardisées au front. Le back-end garantit la fiabilité : j’y ai centralisé l’authentification, les autorisations selon les rôles (jardinier / propriétaire) et les validations qui évitent les incohérences.
+
+Pour rendre ces vérifications maintenables, j’ai utilisé des \textbf{middlewares} exécutés avant la logique métier, notamment pour vérifier l’authentification et configurer le \textbf{CORS}. Avec le CORS, j’ai limité les origines autorisées à appeler l’API afin d’éviter qu’une autre application \textbf{consomme l’API}.
+
+\section*{Base de données : PostgreSQL}
+\addcontentsline{toc}{section}{Base de données : PostgreSQL}
+
+J’ai construit JardinSolidaire autour d’une \textbf{base de données relationnelle}, parce que le cœur du projet repose sur des liens entre les données : un propriétaire possède des jardins, un jardin propose des créneaux, un jardinier réserve un créneau, et une réservation peut ensuite évoluer (statut, échanges, etc.). Ce modèle relationnel me permet de garder une structure cohérente et d’éviter des données "déconnectées".
+
+J’ai choisi \textbf{PostgreSQL} parce que c’est un standard très courant en production et particulièrement adapté à des modèles relationnels. Il s’intègre très bien avec Prisma et l’écosystème Node.js, et il rend le projet plus facilement maintenable : si le projet est repris plus tard, PostgreSQL est familier dans la majorité des environnements professionnels.
+
+\section*{ORM : Prisma}
+\addcontentsline{toc}{section}{ORM : Prisma}
+
+Pour connecter mon code à PostgreSQL, j’ai utilisé \textbf{Prisma} comme ORM (Object-Relational Mapping). Au lieu d’écrire du SQL à la main, j’ai manipulé des modèles directement dans le code (par exemple \texttt{User}, \texttt{Garden}, \texttt{Booking}), ce qui rend les requêtes plus lisibles et plus faciles à maintenir.
+
+J’ai choisi Prisma parce qu’il m’a permis de garder le modèle de données \textbf{centralisé} et cohérent : toutes les relations et champs sont définis dans un schéma unique, et Prisma génère ensuite un client qui limite les erreurs (champs inexistants, formats incorrects, etc.).
+
+J’ai aussi utilisé Prisma pour gérer les \textbf{migrations}, afin de versionner l’évolution de la base de données (ajouts de tables, de champs, ajustements de relations) et pouvoir reproduire ces changements proprement sur une autre machine ou en production.
+
+Enfin, en générant des requêtes paramétrées, Prisma réduit les risques liés aux injections SQL et m’aide à garder une couche d’accès aux données plus sûre.
+
+\section*{Conteneurisation : Docker / Docker Compose}
+\addcontentsline{toc}{section}{Conteneurisation : Docker / Docker Compose}
+
+Pour le développement, j’ai utilisé \textbf{Docker} et \textbf{Docker Compose} afin d’avoir un environnement de travail reproductible. L’objectif était d’éviter les écarts entre machines (versions, dépendances, configuration).
+
+J’ai packagé les services du projet et je les lance ensemble avec Docker Compose : le front-end, le back-end et la base de données PostgreSQL. Ça me permet de démarrer le projet rapidement, de le réinstaller facilement sur une nouvelle machine, et de garder une configuration stable tout au long du développement. C’est aussi une base saine pour un déploiement plus propre, puisque l’application est déjà pensée comme un ensemble de services lançables de manière cohérente.
+
+\section*{Qualité : tests (Jest, Supertest, Playwright) et automatisation (GitHub Actions)}
+\addcontentsline{toc}{section}{Qualité : tests (Jest, Supertest, Playwright) et automatisation (GitHub Actions)}
+
+Pour fiabiliser JardinSolidaire, j’ai mis en place une stratégie de tests à plusieurs niveaux. J’ai utilisé \textbf{Jest} pour écrire des \textbf{tests unitaires} sur des éléments clés (fonctions et règles métier), afin de sécuriser rapidement des comportements critiques et éviter des bugs lors des évolutions. J’ai aussi ajouté des \textbf{tests d’intégration} avec \textbf{Supertest} pour vérifier le comportement de l’API dans des conditions proches du réel. Cela me permet de tester l’API sans passer par l’interface, tout en restant sur des scénarios concrets. J’ai utilisé \textbf{Playwright} pour des \textbf{tests end-to-end}, afin de rejouer des parcours complets d'un.e utilisateur·ices : navigation, formulaires, appels à l’API et affichage des résultats. Je vérifie ainsi que l’application fonctionne correctement de bout en bout. Enfin, j’ai automatisé ces vérifications avec \textbf{GitHub Actions} : à chaque push ou pull request, je lance automatiquement les tests et je vérifie que l’application build correctement. L’objectif est de détecter les régressions le plus tôt possible et de ne pas dépendre uniquement de tests manuels.
+
+\section*{Gestion de code : Git / GitHub}
+\addcontentsline{toc}{section}{Gestion de code : Git / GitHub}
+
+J’ai versionné le projet avec \textbf{Git} et je l’ai hébergé sur \textbf{GitHub} afin de garder un historique clair et de travailler de manière structurée. J’ai organisé mon développement avec des branches par fonctionnalité, ce qui m’a permis d’isoler les évolutions, de tester sans risque et de pouvoir revenir en arrière facilement en cas de problème. J’ai aussi utilisé GitHub pour cadrer mon workflow avec des \textbf{pull requests} et l’intégration de la CI, afin de valider automatiquement que le projet build et que les tests passent avant d’intégrer une évolution.
+
+\section*{Organisation du projet}
+\addcontentsline{toc}{section}{Organisation du projet}
+
+J’ai organisé le code de JardinSolidaire pour séparer clairement les responsabilités et garder une base facile à faire évoluer. J’ai isolé l’interface dans \textbf{frontend/} (Next.js) et la logique métier dans \textbf{backend/} (Node/Express), afin d’éviter que des règles métier se retrouvent dispersées dans l’UI. J’ai aussi dédié un dossier \textbf{e2e/} aux tests end-to-end (Playwright) pour valider des parcours complets sans mélanger ces scénarios avec le code applicatif. Enfin, j’ai centralisé l’automatisation dans \textbf{.github/workflows/} et j’ai regroupé à la racine les configurations communes (Docker, Jest, Playwright\ldots) ainsi que les fichiers \textbf{.env} pour gérer la configuration et les secrets hors du code et qui ne sont pas versionnés sur GitHub.
+
+\vspace{\dbspacebefore}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.29\textwidth]{assets/08_architecture/arborescence.png}
+  \caption{Arborescence du projet - séparation front-end, back-end, tests et automatisation.}
+  \label{fig:js-archi-arborescence}
+\end{figure}
+\vspace{\dbspaceafter}
+
+\section*{Flux technique : du navigateur à la base de données}
+\addcontentsline{toc}{section}{Flux technique : du navigateur à la base de données}
+
+J’ai formalisé le trajet d’une action utilisateur pour montrer où s’appliquent les règles et où circulent les données. Quand un utilisateur déclenche une action (par exemple demander une réservation), le navigateur appelle le front \textbf{Next.js} (Vercel), qui envoie ensuite une requête à l’API \textbf{Express} (Render). C’est côté API que j’applique l’authentification, les autorisations et les règles métier, avant d’interroger \textbf{PostgreSQL} (Neon) via \textbf{Prisma} et de renvoyer une réponse au front. Même si l’interface affiche un créneau comme disponible, le serveur doit revalider la disponibilité au moment de la demande afin d’éviter une double réservation.
+
+\vspace{\dbspacebefore}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\dbimgwidth]{assets/08_architecture/architecture.png}
+  \caption{Flux technique - navigateur $\rightarrow$ front (Vercel) $\rightarrow$ API (Render) $\rightarrow$ PostgreSQL (Neon) via Prisma.}
+  \label{fig:js-flux-tech}
+\end{figure}
+\vspace{\dbspaceafter}

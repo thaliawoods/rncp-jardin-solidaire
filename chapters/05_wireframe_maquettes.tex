@@ -1,0 +1,140 @@
+% ===========================
+% Wireframes et maquettes
+% ===========================
+
+\chapter{Wireframes et maquettes}
+
+\section*{Objectifs}
+\addcontentsline{toc}{section}{Objectifs}
+
+Avant d’écrire du code, j’ai conçu les écrans sur \textbf{Figma} pour une raison simple : je voulais que JardinSolidaire ne soit pas "un assemblage de pages", mais un \textbf{parcours fluide} qui transforme une intention ("j’aimerais jardiner") en action concrète ("j’ai une réservation, un suivi, et un cadre d’échange").
+
+J’ai travaillé en deux temps : d’abord des \textbf{wireframes} (quoi afficher, dans quel ordre), puis des \textbf{maquettes} pour fixer la hiérarchie visuelle, la lisibilité mobile et les états critiques (chargement, erreur, connecté·e/non connecté·e, confirmation). Ces maquettes m’ont servi de \textbf{contrat d’implémentation} pendant le développement.
+
+\section*{Fil conducteur : du premier écran à la réservation}
+\addcontentsline{toc}{section}{Fil conducteur : du premier écran à la réservation}
+
+J’ai organisé les maquettes en suivant le parcours le plus important du produit : \textbf{découvrir} $\rightarrow$ \textbf{comprendre} $\rightarrow$ \textbf{se connecter} $\rightarrow$ \textbf{choisir} $\rightarrow$ \textbf{réserver} $\rightarrow$ \textbf{suivre et échanger}.
+
+\subsection*{Clarifier le concept dès l’arrivée}
+\addcontentsline{toc}{subsection}{Clarifier le concept dès l’arrivée}
+
+L’accueil pose immédiatement le contexte : JardinSolidaire s’adresse à deux profils (propriétaires et jardinier·es). J’ai donc choisi un onboarding très direct, avec deux entrées claires ("Je veux jardiner" / "Je propose mon jardin"), pour que l’utilisateur·ice sache où aller en quelques secondes (Figure~\ref{fig:maquette-accueil}).  
+
+\vspace{\dbspacebefore}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.6\textwidth]{assets/05_wireframe_maquettes/maquette_accueil.png}
+  \caption{Accueil}
+  \label{fig:maquette-accueil}
+\end{figure}
+\vspace{\dbspaceafter}
+
+\subsection*{Réduire la friction sans sacrifier la sécurité}
+\addcontentsline{toc}{subsection}{Réduire la friction sans sacrifier la sécurité}
+
+Ensuite, j’ai conçu l’inscription et la connexion avec une contrainte forte : \textbf{aller vite}, tout en gardant un accès sécurisé. Les formulaires sont simples et guidés (Figure~\ref{fig:maquette-register} et Figure~\ref{fig:maquette-login}).
+J’ai choisi une \textbf{vérification par code e-mail} plutôt qu’un lien : sur mobile, c’est plus lisible, plus immédiat, et ça évite de perdre l’utilisateur·ice dans un changement d’application (mail $\rightarrow$ navigateur). (Figure~\ref{fig:maquette-verify}).
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.5\textwidth]{assets/05_wireframe_maquettes/maquette_creation_compte.png}
+  \caption{Création de compte }
+  \label{fig:maquette-register}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.5\textwidth]{assets/05_wireframe_maquettes/maquette_connexion.png}
+  \caption{Connexion}
+  \label{fig:maquette-login}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.5\textwidth]{assets/05_wireframe_maquettes/maquette_verification_email.png}
+  \caption{Vérification par code}
+  \label{fig:maquette-verify}
+\end{figure}
+
+\subsection*{Découvrir facilement : liste claire + action évidente}
+\addcontentsline{toc}{subsection}{Découvrir facilement : liste claire + action évidente}
+
+Une fois "dans" l’application, le besoin principal est la découverte : trouver un jardin facilement. J’ai donc conçu une liste de jardins lisible, avec une structure carte, et la place nécessaire pour des filtres/favoris (Figure~\ref{fig:maquette-liste-jardins}). L’idée est que la personne puisse \textbf{scanner} rapidement, retenir, puis revenir.
+
+\vspace{\dbspacebefore}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.6\textwidth]{assets/05_wireframe_maquettes/maquette_liste_jardins.png}
+  \caption{Liste des jardins}
+  \label{fig:maquette-liste-jardins}
+\end{figure}
+\vspace{\dbspaceafter}
+
+\subsection*{Rassurer avant d’engager : fiche jardin = contexte + décision}
+\addcontentsline{toc}{subsection}{Rassurer avant d’engager : fiche jardin = contexte + décision}
+
+La fiche jardin est l’écran qui transforme l’intérêt en décision. Je l’ai conçue comme un "résumé utile", et surtout \textbf{une action principale claire} pour passer à la réservation. L’utilisateur·ice doit comprendre \textbf{où iel va}, \textbf{pourquoi iel vient}, et \textbf{dans quelles conditions}, avant d’envoyer une demande (Figure~\ref{fig:maquette-fiche-jardin}).
+
+\vspace{\dbspacebefore}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.6\textwidth]{assets/05_wireframe_maquettes/maquette_fiche_jardin.png}
+  \caption{Fiche jardin}
+  \label{fig:maquette-fiche-jardin}
+\end{figure}
+\vspace{\dbspaceafter}
+
+\subsection*{Le moment critique : réserver}
+\addcontentsline{toc}{subsection}{Le moment critique : réserver}
+
+La réservation est la partie la plus sensible du parcours : si l’utilisateur·ice ne comprend pas ce qu’iel réserve, ou s’iel doute, iel abandonne. J’ai donc conçu une page où tout est explicite : la demande, le créneau, et le contexte (jardin/jardinier·e). L’objectif est qu’au moment de cliquer, la personne sache exactement ce qui part côté serveur (Figure~\ref{fig:maquette-reservation}).
+
+\vspace{\dbspacebefore}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.6\textwidth]{assets/05_wireframe_maquettes/maquette_page_reservation.png}
+  \caption{Page de réservation}
+  \label{fig:maquette-reservation}
+\end{figure}
+\vspace{\dbspaceafter}
+
+\subsection*{Après l’action : suivre}
+\addcontentsline{toc}{subsection}{Après l’action : suivre}
+
+Une fois la demande envoyée, le produit doit éviter le "vide". J’ai donc prévu des écrans de suivi : une liste de réservations (futures / passées) et un détail de réservation, pour que l’utilisateur·ice puisse vérifier l’état, revenir sur les infos, et agir sans se perdre (Figure~\ref{fig:maquette-liste-resas}).
+
+\vspace{\dbspacebefore}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.6\textwidth]{assets/05_wireframe_maquettes/maquette_liste_reservations.png}
+  \caption{Suivi}
+  \label{fig:maquette-liste-resas}
+\end{figure}
+
+\subsection*{Échanger sans sortir du cadre : messagerie liée à la réservation}
+\addcontentsline{toc}{subsection}{Échanger sans sortir du cadre : messagerie liée à la réservation}
+
+Enfin, j’ai conçu une messagerie qui reste \textbf{attachée au contexte} : on discute à propos d’un jardin, d’un créneau, et d’une demande. C’est un choix de fiabilité : moins de malentendus, une trace, et une coordination plus simple (Figure~\ref{fig:maquette-messagerie}).
+
+\vspace{\dbspacebefore}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.6\textwidth]{assets/05_wireframe_maquettes/maquette_boite_reception.png}
+  \caption{Boîte de réception}
+  \label{fig:maquette-messagerie}
+\end{figure}
+\vspace{\dbspaceafter}
+
+\section*{Écrans "réassurance"}
+\addcontentsline{toc}{section}{Écrans "réassurance"}
+
+Pour renforcer la confiance, j’ai aussi prévu des écrans qui rassurent et fidélisent : le profil (informations utiles, cohérence), et selon la priorité produit soit les favoris (revenir plus tard), soit l’avis (boucle de confiance). 
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.6\textwidth]{assets/05_wireframe_maquettes/maquette_favoris.png}
+  \caption{Favoris}
+  \label{fig:maquette-favoris}
+\end{figure}
+

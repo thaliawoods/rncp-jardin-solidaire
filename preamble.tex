@@ -1,0 +1,195 @@
+% =========================
+% PREAMBLE — JardinSolidaire
+% =========================
+
+% --- Langue ---
+\usepackage[french]{babel}
+
+% --- Mise en page ---
+\usepackage[tmargin=1.6cm,bmargin=2cm,lmargin=1in,rmargin=1in,footskip=.2in]{geometry}
+\usepackage{setspace}
+\setstretch{1.08}
+\usepackage{microtype}
+\usepackage{parskip}
+
+% --- Police ---
+\usepackage{newpxtext}
+
+% --- Images / flottants / listes ---
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{enumitem}
+\setlist[itemize]{noitemsep, topsep=4pt}
+\setlist[enumerate]{noitemsep, topsep=4pt}
+
+% Mets tous tes paths ici, en une seule fois (sinon tu écrases)
+\graphicspath{{assets/cover/}{assets/}{assets/}{assets/17_annexe/}}
+
+% --- Titrage chapitres ---
+\usepackage{titlesec}
+\titlespacing*{\chapter}{0pt}{-35pt}{16pt}
+
+% --- Sommaire (tocloft AVANT hyperref) ---
+\usepackage{tocloft}
+\setcounter{tocdepth}{0}
+\setlength{\cftbeforechapskip}{8pt}
+\setlength{\cftbeforesecskip}{2pt}
+\renewcommand{\cftchapfont}{\bfseries}
+\renewcommand{\cftchappagefont}{\bfseries}
+\renewcommand{\cftsecfont}{}
+\renewcommand{\cftsecpagefont}{}
+\renewcommand{\cftdotsep}{1.5}
+\setlength{\cftchapindent}{0pt}
+\setlength{\cftchapnumwidth}{2.2em}
+\setlength{\cftsecindent}{2.2em}
+\setlength{\cftsecnumwidth}{3.0em}
+
+% --- Couleurs + liens ---
+\usepackage{xcolor}
+\definecolor{doc}{RGB}{0,60,110}
+
+\usepackage{xurl}
+
+\usepackage{hyperref}
+\hypersetup{
+  pdftitle={Projet Jardin Solidaire},
+  colorlinks=true,
+  linkcolor=doc!90,
+  bookmarksnumbered=true,
+  bookmarksopen=true
+}
+\usepackage{bookmark}
+
+% --- Captions ---
+\usepackage{caption}
+\captionsetup{
+  labelfont=bf,
+  font=small,
+  justification=centering,
+  singlelinecheck=false
+}
+
+% --- Annexes PDF ---
+\usepackage{pdfpages}
+
+% --- TikZ ---
+\usepackage{tikz}
+\usetikzlibrary{positioning,arrows.meta}
+
+% --- Libellés FR ---
+\renewcommand{\chaptername}{Chapitre}
+\renewcommand{\contentsname}{Sommaire}
+\renewcommand{\listfigurename}{Liste des figures}
+\renewcommand{\listtablename}{Liste des tableaux}
+\renewcommand{\appendixname}{Annexes}
+
+% --- Macro Annexe ---
+\newcommand{\Annexe}[2]{%
+  \clearpage
+  \chapter*{Annexe #1 — #2}%
+  \addcontentsline{toc}{chapter}{Annexe #1 — #2}%
+}
+
+% --- Espacements réutilisables ---
+\newcommand{\dbspacebefore}{0.25cm}
+\newcommand{\dbspaceafter}{0.15cm}
+
+% --- Mode rapide pour Overleaf free ---
+\newif\iffast
+\fasttrue % mets \fastfalse pour la version finale
+
+\graphicspath{{./}{./assets/}{./assets/}}
+
+\usepackage{tabularx}
+\usepackage{array}
+
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+
+% --- Boîtes 3x2 (sans tcolorbox) ---
+\usepackage{xcolor}
+
+% Couleurs (modifie si tu veux)
+\definecolor{jsBoxBorder}{HTML}{2F3A34}
+\definecolor{jsBoxBg}{HTML}{F4F7F5}
+
+% Réglages boîtes
+\newlength{\JSBoxSep}
+\setlength{\JSBoxSep}{10pt} % espace horizontal entre boîtes
+
+\newlength{\JSBoxPad}
+\setlength{\JSBoxPad}{6pt}  % padding interne
+
+\newlength{\JSBoxRule}
+\setlength{\JSBoxRule}{0.6pt} % épaisseur bordure
+
+\newlength{\JSBoxW}        % largeur d’une boîte (calculée)
+\newlength{\JSBoxFullH}    % hauteur max de la ligne (calculée)
+\newlength{\JSBoxInnerH}   % hauteur interne à appliquer (calculée)
+
+\newsavebox{\JSBoxA}
+\newsavebox{\JSBoxB}
+\newsavebox{\JSBoxC}
+
+% Police interne (plus petite)
+\newcommand{\JSBoxFont}{\fontsize{8.2}{10}\selectfont}
+
+% Boîte "brute" (hauteur auto) -> sert pour mesurer
+\newcommand{\JSBoxRaw}[2]{%
+  \begingroup
+  \setlength{\fboxsep}{\JSBoxPad}%
+  \setlength{\fboxrule}{\JSBoxRule}%
+  \fcolorbox{jsBoxBorder}{jsBoxBg}{%
+    \parbox[t]{\dimexpr\JSBoxW-2\fboxsep-2\fboxrule\relax}{%
+      \JSBoxFont\textbf{#1}\par\vspace{4pt}#2%
+    }%
+  }%
+  \endgroup
+}
+
+% Boîte "fixée" (hauteur imposée) -> sert pour afficher
+\newcommand{\JSBoxFixed}[3]{%
+  \begingroup
+  \setlength{\fboxsep}{\JSBoxPad}%
+  \setlength{\fboxrule}{\JSBoxRule}%
+  \fcolorbox{jsBoxBorder}{jsBoxBg}{%
+    \parbox[t][#3][t]{\dimexpr\JSBoxW-2\fboxsep-2\fboxrule\relax}{%
+      \JSBoxFont\textbf{#1}\par\vspace{4pt}#2%
+    }%
+  }%
+  \endgroup
+}
+
+% Une ligne de 3 boîtes (hauteurs automatiquement harmonisées)
+% Usage : \JSRow{T1}{Txt1}{T2}{Txt2}{T3}{Txt3}
+\newcommand{\JSRow}[6]{%
+  % calc largeur d’une boîte = (textwidth - 2 espaces)/3
+  \setlength{\JSBoxW}{\dimexpr(\textwidth-2\JSBoxSep)/3\relax}%
+
+  % mesure des 3 boîtes en hauteur "naturelle"
+  \sbox{\JSBoxA}{\JSBoxRaw{#1}{#2}}%
+  \sbox{\JSBoxB}{\JSBoxRaw{#3}{#4}}%
+  \sbox{\JSBoxC}{\JSBoxRaw{#5}{#6}}%
+
+  % calc hauteur max (full height = ht + dp)
+  \setlength{\JSBoxFullH}{\dimexpr\ht\JSBoxA+\dp\JSBoxA\relax}%
+  \ifdim\dimexpr\ht\JSBoxB+\dp\JSBoxB\relax > \JSBoxFullH
+    \setlength{\JSBoxFullH}{\dimexpr\ht\JSBoxB+\dp\JSBoxB\relax}%
+  \fi
+  \ifdim\dimexpr\ht\JSBoxC+\dp\JSBoxC\relax > \JSBoxFullH
+    \setlength{\JSBoxFullH}{\dimexpr\ht\JSBoxC+\dp\JSBoxC\relax}%
+  \fi
+
+  % hauteur interne = hauteur max - padding/bordures (haut+bas)
+  \setlength{\JSBoxInnerH}{\dimexpr\JSBoxFullH-2\JSBoxPad-2\JSBoxRule\relax}%
+
+  % affichage des 3 boîtes avec la même hauteur
+  \noindent
+  \JSBoxFixed{#1}{#2}{\JSBoxInnerH}\hspace{\JSBoxSep}%
+  \JSBoxFixed{#3}{#4}{\JSBoxInnerH}\hspace{\JSBoxSep}%
+  \JSBoxFixed{#5}{#6}{\JSBoxInnerH}%
+}
+\usepackage{tabularx}
+\usepackage{array}
+% Colonnes p{} sans justification (évite les grands espaces)
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}

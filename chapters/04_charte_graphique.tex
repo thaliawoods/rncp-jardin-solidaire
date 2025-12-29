@@ -1,0 +1,94 @@
+% ===========================
+% Charte graphique
+% ===========================
+
+\chapter{Charte graphique}
+
+\section*{Intention}
+\addcontentsline{toc}{section}{Intention}
+
+Dès le début de JardinSolidaire, j’ai construit l’identité visuelle avec une idée simple : \textbf{faire gagner du temps} et \textbf{installer la confiance}. Je veux qu’en quelques secondes, l’utilisateur·ice comprenne où iel est, ce qu’iel peut faire, et comment avancer.
+
+Le projet s’adresse à des profils très différents : des propriétaires parfois pressé·es, des personnes moins à l’aise avec le numérique, et des jardinier·es volontaires qui utilisent souvent leur téléphone. J’ai donc choisi une charte qui \textbf{guide} plutôt qu’elle ne décore : une interface lisible, rassurante et agréable, qui évoque la nature sans surcharge.
+
+Je vise une sensation de calme et de stabilité : des écrans aérés, une hiérarchie nette, et des actions immédiatement repérables. L’objectif est de \textbf{réduire les erreurs} et de \textbf{fluidifier le parcours}.
+
+\section*{Principes}
+\addcontentsline{toc}{section}{Principes}
+
+\subsection*{Accessibilité}
+\addcontentsline{toc}{subsection}{Accessibilité}
+
+Le premier pilier est l’\textbf{accessibilité}. Je veux que l’application reste utilisable par le plus grand nombre, y compris sur petit écran, en extérieur, ou avec une vision diminuée. Pour ça, j’ai travaillé en priorité la lisibilité : contrastes suffisants, tailles de texte confortables, et éléments interactifs faciles à cibler.
+
+Je me suis appuyée sur les recommandations \textbf{WCAG} (AA/AAA) et j’ai vérifié mes contrastes avec \textit{Contrast Checker} afin de m’assurer que les informations essentielles restent lisibles dans des conditions réelles (Figures~\ref{fig:js-contrast-green} et \ref{fig:js-contrast-fuchsia}). J’ai aussi veillé aux zones cliquables : sur mobile, une action doit être simple à toucher sans précision chirurgicale, sinon on multiplie les erreurs.
+
+\vspace{\dbspacebefore}
+\begin{figure}[H]
+  \centering
+
+  \begin{minipage}[t]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{assets/04_charte_graphique/vert.png}
+  \end{minipage}
+  \hfill
+  \begin{minipage}[t]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{assets/04_charte_graphique/fuschia.png}
+  \end{minipage}
+
+  \caption{Vérifications de contraste : fond vert (lisibilité élevée) et accent fuchsia (CTA visible et lisible).}
+  \label{fig:js-contrast-checks}
+\end{figure}
+\vspace{\dbspaceafter}
+\newpage
+
+
+Le deuxième principe, c’est le \textbf{mobile-first}. J’ai conçu les écrans d’abord pour le téléphone, parce que c’est l’usage le plus contraint : peu d’espace, navigation au pouce, attention fragmentée. Mon objectif est de garder une interface \textbf{claire} et priorisée : peu d’informations à la fois, mais les bonnes informations, au bon moment.
+
+Je prends en compte la logique de \textit{thumb-reach} : les actions fréquentes doivent rester faciles d’accès, sinon l’expérience devient pénible. Une fois cette base solide, j’enrichis la version desktop avec plus d’espace (colonnes, panneaux), sans changer le langage visuel.
+
+\vspace{\dbspacebefore}
+\begin{figure}[H]
+  \centering
+  \makebox[\textwidth][c]{%
+    \includegraphics[width=1.2\textwidth]{assets/04_charte_graphique/responsive.png}%
+  }
+  \caption{Mobile-first : une base mobile enrichie sur grand écran, sans casser les repères.}
+  \label{fig:js-responsive}
+\end{figure}
+
+\subsection*{Cohérence}
+\addcontentsline{toc}{subsection}{Cohérence}
+
+Le troisième principe, c’est la \textbf{cohérence}. Une interface cohérente réduit la charge mentale : l’utilisateur·ice reconnaît les patterns et n’a pas besoin de réapprendre à chaque écran.
+
+Pour y arriver, j’ai construit des composants UI réutilisables (cartes, listes, filtres, bandeaux d’action) avec des espacements réguliers et une iconographie discrète. Mon objectif est que l’application reste stable visuellement : mêmes codes, mêmes repères, mêmes réflexes.
+\newpage
+
+\section*{Éléments de la charte : couleurs, typographie, composants}
+\addcontentsline{toc}{section}{Éléments de la charte : couleurs, typographie, composants}
+
+J’ai volontairement choisi une palette \textbf{courte} et \textbf{mémorisable} (Figure~\ref{fig:js-palette}). Le \textbf{vert médium} porte l’identité et structure les éléments clés : il évoque la nature, mais surtout il donne des repères stables dans l’interface.
+
+Le \textbf{rose fuchsia} sert d’accent : je l’utilise pour mettre en évidence les actions principales et guider l’œil. Quand une personne hésite, je veux qu’elle repère immédiatement où agir.
+
+Pour éviter la fatigue visuelle, j’ajoute un menthe très clair en fond : il aère les écrans et crée des zones de repos. Un vert foncé renforce la lisibilité sur les titres et certains textes, et le blanc reste la base pour conserver une interface lumineuse et simple.
+
+\vspace{\dbspacebefore}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.95\textwidth]{assets/04_charte_graphique/palette.png}
+  \caption{Palette JardinSolidaire : couleurs d’identité (verts), accent (fuchsia) et fonds (menthe/blanc).}
+  \label{fig:js-palette}
+\end{figure}
+\vspace{\dbspaceafter}
+
+J’ai aussi défini une hiérarchie typographique cohérente (titres, sous-titres, texte, labels). L’idée est de guider la lecture sans obliger l’utilisateur·ice à tout parcourir : on comprend d’abord l’essentiel, puis on détaille si besoin.
+
+\section*{Centralisation dans Figma}
+\addcontentsline{toc}{section}{Centralisation dans Figma}
+
+Toute la charte est centralisée dans \textbf{Figma} : styles de couleurs, styles de texte, et composants. Je m’en sers comme d’une référence unique entre design et développement : quand j’ajoute un écran, je réutilise la même base, avec les mêmes règles.
+
+Ça facilite le \textit{hand-off} et ça évite les dérives au fil du temps : l’interface reste cohérente, même quand le projet grandit.
