@@ -1,8 +1,8 @@
-PWD /Users/thaliawoods/Documents/Ada/THALIA RENDU RNCP/DOSSIER PROJET/jardin-solidaire
+PWD /Users/thaliawoods/Documents/Ada/THALIA RENDU RNCP/DOSSIER PROJET/jardin-solidaire/rncp-jardin-solidaire
 INPUT /usr/local/texlive/2025basic/texmf.cnf
 INPUT /usr/local/texlive/2025basic/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2025basic/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/thaliawoods/Documents/Ada/THALIA RENDU RNCP/DOSSIER PROJET/jardin-solidaire/main.tex
+INPUT /Users/thaliawoods/Documents/Ada/THALIA RENDU RNCP/DOSSIER PROJET/jardin-solidaire/rncp-jardin-solidaire/main.tex
 OUTPUT main.log
 INPUT /usr/local/texlive/2025basic/texmf-dist/tex/latex/base/report.cls
 INPUT /usr/local/texlive/2025basic/texmf-dist/tex/latex/base/report.cls
@@ -356,6 +356,11 @@ INPUT /usr/local/texlive/2025basic/texmf-dist/tex/latex/newpx/ts1zpltlf.fd
 INPUT /usr/local/texlive/2025basic/texmf-dist/fonts/tfm/public/newpx/zplTLF-Bold-ts1.tfm
 INPUT /usr/local/texlive/2025basic/texmf-dist/fonts/tfm/public/newpx/zplTLF-Regular-ts1.tfm
 INPUT /usr/local/texlive/2025basic/texmf-dist/fonts/enc/dvips/newpx/zpl_TOsF.enc
+INPUT ./chapters/01_presentation2.tex
+INPUT ./chapters/01_presentation2.tex
+INPUT ./chapters/01_presentation2.tex
+INPUT ./chapters/01_presentation2.tex
+INPUT chapters/01_presentation2.tex
 INPUT ./chapters/02_competences.tex
 INPUT ./chapters/02_competences.tex
 INPUT ./chapters/02_competences.tex

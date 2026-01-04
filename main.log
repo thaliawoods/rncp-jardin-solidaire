@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.12.24)  28 DEC 2025 19:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.12.24)  2 JAN 2026 15:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/Users/thaliawoods/Documents/Ada/THALIA RENDU RNCP/DOSSIER PROJET/jardin-solidaire/main.tex"
-(/Users/thaliawoods/Documents/Ada/THALIA RENDU RNCP/DOSSIER PROJET/jardin-solidaire/main.tex
+**"/Users/thaliawoods/Documents/Ada/THALIA RENDU RNCP/DOSSIER PROJET/jardin-solidaire/rncp-jardin-solidaire/main.tex"
+(/Users/thaliawoods/Documents/Ada/THALIA RENDU RNCP/DOSSIER PROJET/jardin-solidaire/rncp-jardin-solidaire/main.tex
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
 (/usr/local/texlive/2025basic/texmf-dist/tex/latex/base/report.cls
@@ -859,9 +859,11 @@ LaTeX Font Info:    Font shape `TS1/zpltlf/m/n' will be
 
 
 
-{/usr/local/texlive/2025basic/texmf-dist/fonts/enc/dvips/newpx/zpl_TOsF.enc}]) (./chapters/02_competences.tex
+{/usr/local/texlive/2025basic/texmf-dist/fonts/enc/dvips/newpx/zpl_TOsF.enc}]) (./chapters/01_presentation2.tex
 
-[3]
+[3]) (./chapters/02_competences.tex
+
+[4]
 Chapitre 2.
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
 (Font)              scaled to size 12.0pt on input line 5.
@@ -881,20 +883,20 @@ LaTeX Font Info:    Font shape `TS1/zpltlf/b/n' will be
 (Font)              scaled to size 12.0pt on input line 8.
 
 
-[4
+[5
 
 ]
 LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
 (Font)              scaled to size 10.0pt on input line 35.
 
 
-[5]
+[6]
 
-[6]) (./chapters/03_specifications_fonctionnelles.tex
+[7]) (./chapters/03_specifications_fonctionnelles.tex
 
-[7]
+[8]
 Chapitre 3.
-<assets/03_specifications_fonctionnelles/expression_des_besoins.png, id=109, 898.35625pt x 181.67876pt>
+<assets/03_specifications_fonctionnelles/expression_des_besoins.png, id=113, 898.35625pt x 181.67876pt>
 File: assets/03_specifications_fonctionnelles/expression_des_besoins.png Graphic file (type png)
 <use assets/03_specifications_fonctionnelles/expression_des_besoins.png>
 Package pdftex.def Info: assets/03_specifications_fonctionnelles/expression_des_besoins.png  used on input line 21.
@@ -915,7 +917,7 @@ Package microtype Info: Character `029' is missing
 (microtype)             Ignoring protrusion settings for this character.
 
 
-[8
+[9
 
 {/usr/local/texlive/2025basic/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf-pc.enc} <./assets/03_specifications_fonctionnelles/expression_des_besoins.png>]
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
@@ -931,7 +933,7 @@ Underfull \hbox (badness 1117) in paragraph at lines 95--95
 
 
 
-[9]
+[10]
 
 Package array Warning: Column P is already defined on input line 168.
 
@@ -945,187 +947,187 @@ Overfull \hbox (3.69139pt too wide) in paragraph at lines 202--202
 
 
 
-[10]
-<assets/03_specifications_fonctionnelles/personas.png, id=129, 617.30624pt x 240.9pt>
+[11]
+<assets/03_specifications_fonctionnelles/personas.png, id=133, 617.30624pt x 240.9pt>
 File: assets/03_specifications_fonctionnelles/personas.png Graphic file (type png)
 <use assets/03_specifications_fonctionnelles/personas.png>
 Package pdftex.def Info: assets/03_specifications_fonctionnelles/personas.png  used on input line 230.
 (pdftex.def)             Requested size: 469.75502pt x 183.32481pt.
 
 
-[11 <./assets/03_specifications_fonctionnelles/personas.png>]
-<assets/03_specifications_fonctionnelles/user_flow.png, id=136, 1261.71375pt x 460.72125pt>
+[12 <./assets/03_specifications_fonctionnelles/personas.png>]
+<assets/03_specifications_fonctionnelles/user_flow.png, id=141, 1261.71375pt x 460.72125pt>
 File: assets/03_specifications_fonctionnelles/user_flow.png Graphic file (type png)
 <use assets/03_specifications_fonctionnelles/user_flow.png>
 Package pdftex.def Info: assets/03_specifications_fonctionnelles/user_flow.png  used on input line 273.
 (pdftex.def)             Requested size: 469.75502pt x 171.53276pt.
 
 
-[12 <./assets/03_specifications_fonctionnelles/user_flow.png>]
-<assets/03_specifications_fonctionnelles/moscow.png, id=144, 726.715pt x 413.545pt>
+[13 <./assets/03_specifications_fonctionnelles/user_flow.png>]
+<assets/03_specifications_fonctionnelles/moscow.png, id=148, 726.715pt x 413.545pt>
 File: assets/03_specifications_fonctionnelles/moscow.png Graphic file (type png)
 <use assets/03_specifications_fonctionnelles/moscow.png>
 Package pdftex.def Info: assets/03_specifications_fonctionnelles/moscow.png  used on input line 302.
 (pdftex.def)             Requested size: 446.26582pt x 253.9595pt.
 
 
-[13 <./assets/03_specifications_fonctionnelles/moscow.png>]) (./chapters/04_charte_graphique.tex
+[14 <./assets/03_specifications_fonctionnelles/moscow.png>]) (./chapters/04_charte_graphique.tex
 
-[14]
+[15]
 Chapitre 4.
 
-LaTeX Warning: Reference `fig:js-contrast-green' on page 15 undefined on input line 24.
+LaTeX Warning: Reference `fig:js-contrast-green' on page 16 undefined on input line 24.
 
 
-LaTeX Warning: Reference `fig:js-contrast-fuchsia' on page 15 undefined on input line 24.
+LaTeX Warning: Reference `fig:js-contrast-fuchsia' on page 16 undefined on input line 24.
 
-<assets/04_charte_graphique/vert.png, id=155, 1247.66125pt x 482.80376pt>
+<assets/04_charte_graphique/vert.png, id=160, 1247.66125pt x 482.80376pt>
 File: assets/04_charte_graphique/vert.png Graphic file (type png)
 <use assets/04_charte_graphique/vert.png>
 Package pdftex.def Info: assets/04_charte_graphique/vert.png  used on input line 32.
 (pdftex.def)             Requested size: 225.4804pt x 87.24716pt.
-<assets/04_charte_graphique/fuschia.png, id=156, 1247.66125pt x 465.74pt>
+<assets/04_charte_graphique/fuschia.png, id=161, 1247.66125pt x 465.74pt>
 File: assets/04_charte_graphique/fuschia.png Graphic file (type png)
 <use assets/04_charte_graphique/fuschia.png>
 Package pdftex.def Info: assets/04_charte_graphique/fuschia.png  used on input line 37.
 (pdftex.def)             Requested size: 225.4804pt x 84.16359pt.
 
 
-[15
+[16
 
  <./assets/04_charte_graphique/vert.png> <./assets/04_charte_graphique/fuschia.png>]
-<assets/04_charte_graphique/responsive.png, id=165, 998.73125pt x 424.58624pt>
+<assets/04_charte_graphique/responsive.png, id=169, 998.73125pt x 424.58624pt>
 File: assets/04_charte_graphique/responsive.png Graphic file (type png)
 <use assets/04_charte_graphique/responsive.png>
 Package pdftex.def Info: assets/04_charte_graphique/responsive.png  used on input line 56.
 (pdftex.def)             Requested size: 563.70459pt x 239.65196pt.
 
 
-[16 <./assets/04_charte_graphique/responsive.png>]
-<assets/04_charte_graphique/palette.png, id=173, 1321.93875pt x 450.68375pt>
+[17 <./assets/04_charte_graphique/responsive.png>]
+<assets/04_charte_graphique/palette.png, id=177, 1321.93875pt x 450.68375pt>
 File: assets/04_charte_graphique/palette.png Graphic file (type png)
 <use assets/04_charte_graphique/palette.png>
 Package pdftex.def Info: assets/04_charte_graphique/palette.png  used on input line 81.
 (pdftex.def)             Requested size: 446.26582pt x 152.14389pt.
 ) (./chapters/05_wireframe_maquettes.tex
 
-[17 <./assets/04_charte_graphique/palette.png>]
+[18 <./assets/04_charte_graphique/palette.png>]
 Chapitre 5.
-<assets/05_wireframe_maquettes/maquette_accueil.png, id=181, 655.44875pt x 385.44pt>
+<assets/05_wireframe_maquettes/maquette_accueil.png, id=186, 655.44875pt x 385.44pt>
 File: assets/05_wireframe_maquettes/maquette_accueil.png Graphic file (type png)
 <use assets/05_wireframe_maquettes/maquette_accueil.png>
 Package pdftex.def Info: assets/05_wireframe_maquettes/maquette_accueil.png  used on input line 27.
 (pdftex.def)             Requested size: 281.85587pt x 165.74773pt.
 
 
-[18
+[19
 
  <./assets/05_wireframe_maquettes/maquette_accueil.png>]
-<assets/05_wireframe_maquettes/maquette_creation_compte.png, id=192, 540.0175pt x 389.455pt>
+<assets/05_wireframe_maquettes/maquette_creation_compte.png, id=196, 540.0175pt x 389.455pt>
 File: assets/05_wireframe_maquettes/maquette_creation_compte.png Graphic file (type png)
 <use assets/05_wireframe_maquettes/maquette_creation_compte.png>
 Package pdftex.def Info: assets/05_wireframe_maquettes/maquette_creation_compte.png  used on input line 41.
 (pdftex.def)             Requested size: 234.8775pt x 169.38777pt.
-<assets/05_wireframe_maquettes/maquette_connexion.png, id=193, 556.0775pt x 386.44376pt>
+<assets/05_wireframe_maquettes/maquette_connexion.png, id=197, 556.0775pt x 386.44376pt>
 File: assets/05_wireframe_maquettes/maquette_connexion.png Graphic file (type png)
 <use assets/05_wireframe_maquettes/maquette_connexion.png>
 Package pdftex.def Info: assets/05_wireframe_maquettes/maquette_connexion.png  used on input line 48.
 (pdftex.def)             Requested size: 234.8775pt x 163.23103pt.
-<assets/05_wireframe_maquettes/maquette_verification_email.png, id=194, 549.05125pt x 391.4625pt>
+<assets/05_wireframe_maquettes/maquette_verification_email.png, id=198, 549.05125pt x 391.4625pt>
 File: assets/05_wireframe_maquettes/maquette_verification_email.png Graphic file (type png)
 <use assets/05_wireframe_maquettes/maquette_verification_email.png>
 Package pdftex.def Info: assets/05_wireframe_maquettes/maquette_verification_email.png  used on input line 55.
 (pdftex.def)             Requested size: 234.8775pt x 167.45947pt.
 
 
-[19 <./assets/05_wireframe_maquettes/maquette_creation_compte.png> <./assets/05_wireframe_maquettes/maquette_connexion.png> <./assets/05_wireframe_maquettes/maquette_verification_email.png>]
-<assets/05_wireframe_maquettes/maquette_liste_jardins.png, id=206, 556.0775pt x 385.44pt>
+[20 <./assets/05_wireframe_maquettes/maquette_creation_compte.png> <./assets/05_wireframe_maquettes/maquette_connexion.png> <./assets/05_wireframe_maquettes/maquette_verification_email.png>]
+<assets/05_wireframe_maquettes/maquette_liste_jardins.png, id=210, 556.0775pt x 385.44pt>
 File: assets/05_wireframe_maquettes/maquette_liste_jardins.png Graphic file (type png)
 <use assets/05_wireframe_maquettes/maquette_liste_jardins.png>
 Package pdftex.def Info: assets/05_wireframe_maquettes/maquette_liste_jardins.png  used on input line 68.
 (pdftex.def)             Requested size: 281.85587pt x 195.36612pt.
-<assets/05_wireframe_maquettes/maquette_fiche_jardin.png.png, id=208, 546.04pt x 391.4625pt>
+<assets/05_wireframe_maquettes/maquette_fiche_jardin.png.png, id=212, 546.04pt x 391.4625pt>
 File: assets/05_wireframe_maquettes/maquette_fiche_jardin.png.png Graphic file (type png)
 <use assets/05_wireframe_maquettes/maquette_fiche_jardin.png.png>
 Package pdftex.def Info: assets/05_wireframe_maquettes/maquette_fiche_jardin.png.png  used on input line 82.
 (pdftex.def)             Requested size: 281.85587pt x 202.06836pt.
 
 
-[20 <./assets/05_wireframe_maquettes/maquette_liste_jardins.png> <./assets/05_wireframe_maquettes/maquette_fiche_jardin.png.png>]
-<assets/05_wireframe_maquettes/maquette_page_reservation.png.png, id=218, 540.0175pt x 383.4325pt>
+[21 <./assets/05_wireframe_maquettes/maquette_liste_jardins.png> <./assets/05_wireframe_maquettes/maquette_fiche_jardin.png.png>]
+<assets/05_wireframe_maquettes/maquette_page_reservation.png.png, id=222, 540.0175pt x 383.4325pt>
 File: assets/05_wireframe_maquettes/maquette_page_reservation.png.png Graphic file (type png)
 <use assets/05_wireframe_maquettes/maquette_page_reservation.png.png>
 Package pdftex.def Info: assets/05_wireframe_maquettes/maquette_page_reservation.png.png  used on input line 96.
 (pdftex.def)             Requested size: 281.85587pt x 200.12909pt.
-<assets/05_wireframe_maquettes/maquette_liste_reservations.png.png, id=220, 557.08125pt x 408.52625pt>
+<assets/05_wireframe_maquettes/maquette_liste_reservations.png.png, id=224, 557.08125pt x 408.52625pt>
 File: assets/05_wireframe_maquettes/maquette_liste_reservations.png.png Graphic file (type png)
 <use assets/05_wireframe_maquettes/maquette_liste_reservations.png.png>
 Package pdftex.def Info: assets/05_wireframe_maquettes/maquette_liste_reservations.png.png  used on input line 110.
 (pdftex.def)             Requested size: 281.85587pt x 206.69995pt.
 
 
-[21 <./assets/05_wireframe_maquettes/maquette_page_reservation.png.png> <./assets/05_wireframe_maquettes/maquette_liste_reservations.png.png>]
-<assets/05_wireframe_maquettes/maquette_boite_reception.png, id=230, 550.055pt x 389.455pt>
+[22 <./assets/05_wireframe_maquettes/maquette_page_reservation.png.png> <./assets/05_wireframe_maquettes/maquette_liste_reservations.png.png>]
+<assets/05_wireframe_maquettes/maquette_boite_reception.png, id=234, 550.055pt x 389.455pt>
 File: assets/05_wireframe_maquettes/maquette_boite_reception.png Graphic file (type png)
 <use assets/05_wireframe_maquettes/maquette_boite_reception.png>
 Package pdftex.def Info: assets/05_wireframe_maquettes/maquette_boite_reception.png  used on input line 123.
 (pdftex.def)             Requested size: 281.85587pt x 199.57024pt.
-<assets/05_wireframe_maquettes/maquette_favoris.png, id=231, 551.05875pt x 390.45876pt>
+<assets/05_wireframe_maquettes/maquette_favoris.png, id=235, 551.05875pt x 390.45876pt>
 File: assets/05_wireframe_maquettes/maquette_favoris.png Graphic file (type png)
 <use assets/05_wireframe_maquettes/maquette_favoris.png>
 Package pdftex.def Info: assets/05_wireframe_maquettes/maquette_favoris.png  used on input line 136.
 (pdftex.def)             Requested size: 281.85587pt x 199.72116pt.
 ) (./chapters/06_base_de_données.tex
 
-[22 <./assets/05_wireframe_maquettes/maquette_boite_reception.png> <./assets/05_wireframe_maquettes/maquette_favoris.png>]
+[23 <./assets/05_wireframe_maquettes/maquette_boite_reception.png> <./assets/05_wireframe_maquettes/maquette_favoris.png>]
 Chapitre 6.
-<assets/06_base_de_données/mcd.png, id=240, 1017.8025pt x 781.92125pt>
+<assets/06_base_de_données/mcd.png, id=244, 1017.8025pt x 781.92125pt>
 File: assets/06_base_de_données/mcd.png Graphic file (type png)
 <use assets/06_base_de_données/mcd.png>
 Package pdftex.def Info: assets/06_base_de_données/mcd.png  used on input line 22.
 (pdftex.def)             Requested size: 446.26582pt x 342.84137pt.
 
 
-[23
+[24
 
 ]
-<assets/06_base_de_données/mld.png, id=245, 6335.67pt x 10281.41125pt>
+<assets/06_base_de_données/mld.png, id=250, 6335.67pt x 10281.41125pt>
 File: assets/06_base_de_données/mld.png Graphic file (type png)
 <use assets/06_base_de_données/mld.png>
 Package pdftex.def Info: assets/06_base_de_données/mld.png  used on input line 44.
 (pdftex.def)             Requested size: 446.26582pt x 724.16502pt.
 
 
-[24 <./assets/06_base_de_données/mcd.png>]
+[25 <./assets/06_base_de_données/mcd.png>]
 Overfull \vbox (52.62512pt too high) has occurred while \output is active []
 
 
 
-[25 <./assets/06_base_de_données/mld.png>]) (./chapters/07_specifications_techniques.tex
+[26 <./assets/06_base_de_données/mld.png>]) (./chapters/07_specifications_techniques.tex
 
-[26]
+[27]
 Chapitre 7.
-<assets/07_specifications_techniques/archi_couches.png, id=263, 572.1375pt x 93.34875pt>
+<assets/07_specifications_techniques/archi_couches.png, id=267, 572.1375pt x 93.34875pt>
 File: assets/07_specifications_techniques/archi_couches.png Graphic file (type png)
 <use assets/07_specifications_techniques/archi_couches.png>
 Package pdftex.def Info: assets/07_specifications_techniques/archi_couches.png  used on input line 25.
 (pdftex.def)             Requested size: 328.82707pt x 53.6509pt.
 
 
-[27
+[28
 
  <./assets/07_specifications_techniques/archi_couches.png>]
 
-[28]
-<assets/08_architecture/arborescence.png, id=274, 308.15125pt x 515.9275pt>
+[29]
+<assets/08_architecture/arborescence.png, id=278, 308.15125pt x 515.9275pt>
 File: assets/08_architecture/arborescence.png Graphic file (type png)
 <use assets/08_architecture/arborescence.png>
 Package pdftex.def Info: assets/08_architecture/arborescence.png  used on input line 90.
 (pdftex.def)             Requested size: 136.2258pt x 228.07944pt.
 
 
-[29 <./assets/08_architecture/arborescence.png>]
-<assets/08_architecture/architecture.png, id=281, 1050.92625pt x 512.91624pt>
+[30 <./assets/08_architecture/arborescence.png>]
+<assets/08_architecture/architecture.png, id=286, 1050.92625pt x 512.91624pt>
 File: assets/08_architecture/architecture.png Graphic file (type png)
 <use assets/08_architecture/architecture.png>
 Package pdftex.def Info: assets/08_architecture/architecture.png  used on input line 104.
@@ -1134,28 +1136,28 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <9> on input line 105.
 ) (./chapters/09_gestion_de_projet.tex
 
-[30 <./assets/08_architecture/architecture.png>]
+[31 <./assets/08_architecture/architecture.png>]
 Chapitre 8.
-<assets/09_gestion_de_projet/merge.png, id=290, 938.50626pt x 79.29625pt>
+<assets/09_gestion_de_projet/merge.png, id=294, 938.50626pt x 79.29625pt>
 File: assets/09_gestion_de_projet/merge.png Graphic file (type png)
 <use assets/09_gestion_de_projet/merge.png>
 Package pdftex.def Info: assets/09_gestion_de_projet/merge.png  used on input line 31.
 (pdftex.def)             Requested size: 446.26582pt x 37.70602pt.
 
 
-[31
+[32
 
  <./assets/09_gestion_de_projet/merge.png>]
-<assets/09_gestion_de_projet/backlog.png, id=297, 1016.79875pt x 340.27126pt>
+<assets/09_gestion_de_projet/backlog.png, id=301, 1016.79875pt x 340.27126pt>
 File: assets/09_gestion_de_projet/backlog.png Graphic file (type png)
 <use assets/09_gestion_de_projet/backlog.png>
 Package pdftex.def Info: assets/09_gestion_de_projet/backlog.png  used on input line 51.
 (pdftex.def)             Requested size: 446.26582pt x 149.34077pt.
 ) (./chapters/10_développement.tex
 
-[32 <./assets/09_gestion_de_projet/backlog.png>]
+[33 <./assets/09_gestion_de_projet/backlog.png>]
 Chapitre 9.
-<assets/10_développement/structure_front.png, id=305, 979.66pt x 399.4925pt>
+<assets/10_développement/structure_front.png, id=309, 979.66pt x 399.4925pt>
 File: assets/10_développement/structure_front.png Graphic file (type png)
 <use assets/10_développement/structure_front.png>
 Package pdftex.def Info: assets/10_développement/structure_front.png  used on input line 19.
@@ -1164,220 +1166,220 @@ LaTeX Font Info:    Font shape `T1/npxtt/m/n' will be
 (Font)              scaled to size 9.0pt on input line 20.
 
 
-[33
+[34
 
  <./assets/10_développement/structure_front.png>]
-<assets/10_développement/code_bookings_page_fetch_state_error.png, id=313, 502.87875pt x 381.425pt>
+<assets/10_développement/code_bookings_page_fetch_state_error.png, id=317, 502.87875pt x 381.425pt>
 File: assets/10_développement/code_bookings_page_fetch_state_error.png Graphic file (type png)
 <use assets/10_développement/code_bookings_page_fetch_state_error.png>
 Package pdftex.def Info: assets/10_développement/code_bookings_page_fetch_state_error.png  used on input line 36.
 (pdftex.def)             Requested size: 281.85587pt x 213.78278pt.
-<assets/10_développement/code_bookings_page_ui_states1.png, id=315, 826.08624pt x 133.49875pt>
+<assets/10_développement/code_bookings_page_ui_states1.png, id=319, 826.08624pt x 133.49875pt>
 File: assets/10_développement/code_bookings_page_ui_states1.png Graphic file (type png)
 <use assets/10_développement/code_bookings_page_ui_states1.png>
 Package pdftex.def Info: assets/10_développement/code_bookings_page_ui_states1.png  used on input line 47.
 (pdftex.def)             Requested size: 469.75502pt x 75.9158pt.
-<assets/10_développement/code_bookings_page_ui_states2.png, id=316, 439.6425pt x 36.135pt>
+<assets/10_développement/code_bookings_page_ui_states2.png, id=320, 439.6425pt x 36.135pt>
 File: assets/10_développement/code_bookings_page_ui_states2.png Graphic file (type png)
 <use assets/10_développement/code_bookings_page_ui_states2.png>
 Package pdftex.def Info: assets/10_développement/code_bookings_page_ui_states2.png  used on input line 48.
 (pdftex.def)             Requested size: 422.77664pt x 34.74983pt.
-<assets/10_développement/code_bookings_page_ui_states3.png, id=317, 814.04124pt x 65.24374pt>
+<assets/10_développement/code_bookings_page_ui_states3.png, id=321, 814.04124pt x 65.24374pt>
 File: assets/10_développement/code_bookings_page_ui_states3.png Graphic file (type png)
 <use assets/10_développement/code_bookings_page_ui_states3.png>
 Package pdftex.def Info: assets/10_développement/code_bookings_page_ui_states3.png  used on input line 49.
 (pdftex.def)             Requested size: 469.75502pt x 37.65024pt.
-<assets/10_développement/code_bookings_page_ui_states4.png, id=318, 847.165pt x 43.16125pt>
+<assets/10_développement/code_bookings_page_ui_states4.png, id=322, 847.165pt x 43.16125pt>
 File: assets/10_développement/code_bookings_page_ui_states4.png Graphic file (type png)
 <use assets/10_développement/code_bookings_page_ui_states4.png>
 Package pdftex.def Info: assets/10_développement/code_bookings_page_ui_states4.png  used on input line 50.
 (pdftex.def)             Requested size: 469.75502pt x 23.93303pt.
 
 
-[34 <./assets/10_développement/code_bookings_page_fetch_state_error.png> <./assets/10_développement/code_bookings_page_ui_states1.png> <./assets/10_développement/code_bookings_page_ui_states2.png> <./assets/10_développement/code_bookings_page_ui_states3.png> <./assets/10_développement/code_bookings_page_ui_states4.png>]
-<assets/10_développement/code_booking_detail_route_fetch.png, id=332, 441.65pt x 431.6125pt>
+[35 <./assets/10_développement/code_bookings_page_fetch_state_error.png> <./assets/10_développement/code_bookings_page_ui_states1.png> <./assets/10_développement/code_bookings_page_ui_states2.png> <./assets/10_développement/code_bookings_page_ui_states3.png> <./assets/10_développement/code_bookings_page_ui_states4.png>]
+<assets/10_développement/code_booking_detail_route_fetch.png, id=336, 441.65pt x 431.6125pt>
 File: assets/10_développement/code_booking_detail_route_fetch.png Graphic file (type png)
 <use assets/10_développement/code_booking_detail_route_fetch.png>
 Package pdftex.def Info: assets/10_développement/code_booking_detail_route_fetch.png  used on input line 62.
 (pdftex.def)             Requested size: 281.85587pt x 275.4605pt.
 
 
-[35 <./assets/10_développement/code_booking_detail_route_fetch.png>]
-<assets/10_développement/code_booking_detail_actions_patch_state1.png, id=339, 642.4pt x 115.43124pt>
+[36 <./assets/10_développement/code_booking_detail_route_fetch.png>]
+<assets/10_développement/code_booking_detail_actions_patch_state1.png, id=344, 642.4pt x 115.43124pt>
 File: assets/10_développement/code_booking_detail_actions_patch_state1.png Graphic file (type png)
 <use assets/10_développement/code_booking_detail_actions_patch_state1.png>
 Package pdftex.def Info: assets/10_développement/code_booking_detail_actions_patch_state1.png  used on input line 79.
 (pdftex.def)             Requested size: 281.85587pt x 50.64723pt.
-<assets/10_développement/code_booking_detail_actions_patch_state2.png, id=341, 462.72874pt x 207.77625pt>
+<assets/10_développement/code_booking_detail_actions_patch_state2.png, id=346, 462.72874pt x 207.77625pt>
 File: assets/10_développement/code_booking_detail_actions_patch_state2.png Graphic file (type png)
 <use assets/10_développement/code_booking_detail_actions_patch_state2.png>
 Package pdftex.def Info: assets/10_développement/code_booking_detail_actions_patch_state2.png  used on input line 90.
 (pdftex.def)             Requested size: 234.8775pt x 105.46672pt.
-<assets/10_développement/code_component_booking_status_badge.png, id=343, 716.6775pt x 346.29375pt>
+<assets/10_développement/code_component_booking_status_badge.png, id=348, 716.6775pt x 346.29375pt>
 File: assets/10_développement/code_component_booking_status_badge.png Graphic file (type png)
 <use assets/10_développement/code_component_booking_status_badge.png>
 Package pdftex.def Info: assets/10_développement/code_component_booking_status_badge.png  used on input line 101.
 (pdftex.def)             Requested size: 281.85587pt x 136.19008pt.
 
 
-[36 <./assets/10_développement/code_booking_detail_actions_patch_state1.png> <./assets/10_développement/code_booking_detail_actions_patch_state2.png> <./assets/10_développement/code_component_booking_status_badge.png>]
-<assets/10_développement/code_new_booking_form_a11y_errors1.png, id=356, 586.19pt x 683.55376pt>
+[37 <./assets/10_développement/code_booking_detail_actions_patch_state1.png> <./assets/10_développement/code_booking_detail_actions_patch_state2.png> <./assets/10_développement/code_component_booking_status_badge.png>]
+<assets/10_développement/code_new_booking_form_a11y_errors1.png, id=360, 586.19pt x 683.55376pt>
 File: assets/10_développement/code_new_booking_form_a11y_errors1.png Graphic file (type png)
 <use assets/10_développement/code_new_booking_form_a11y_errors1.png>
 Package pdftex.def Info: assets/10_développement/code_new_booking_form_a11y_errors1.png  used on input line 111.
 (pdftex.def)             Requested size: 281.85587pt x 328.66531pt.
-<assets/10_développement/code_new_booking_form_a11y_errors2.png, id=357, 519.9425pt x 242.9075pt>
+<assets/10_développement/code_new_booking_form_a11y_errors2.png, id=361, 519.9425pt x 242.9075pt>
 File: assets/10_développement/code_new_booking_form_a11y_errors2.png Graphic file (type png)
 <use assets/10_développement/code_new_booking_form_a11y_errors2.png>
 Package pdftex.def Info: assets/10_développement/code_new_booking_form_a11y_errors2.png  used on input line 112.
 (pdftex.def)             Requested size: 234.8775pt x 109.72989pt.
-<assets/10_développement/code_new_booking_check_feedback_disable.png, id=358, 949.5475pt x 512.91624pt>
+<assets/10_développement/code_new_booking_check_feedback_disable.png, id=362, 949.5475pt x 512.91624pt>
 File: assets/10_développement/code_new_booking_check_feedback_disable.png Graphic file (type png)
 <use assets/10_développement/code_new_booking_check_feedback_disable.png>
 Package pdftex.def Info: assets/10_développement/code_new_booking_check_feedback_disable.png  used on input line 113.
 (pdftex.def)             Requested size: 281.85587pt x 152.24815pt.
 
 
-[37 <./assets/10_développement/code_new_booking_form_a11y_errors1.png> <./assets/10_développement/code_new_booking_form_a11y_errors2.png> <./assets/10_développement/code_new_booking_check_feedback_disable.png>]
-<assets/10_développement/code_lib_bookings_api_layer.png, id=368, 686.565pt x 222.8325pt>
+[38 <./assets/10_développement/code_new_booking_form_a11y_errors1.png> <./assets/10_développement/code_new_booking_form_a11y_errors2.png> <./assets/10_développement/code_new_booking_check_feedback_disable.png>]
+<assets/10_développement/code_lib_bookings_api_layer.png, id=372, 686.565pt x 222.8325pt>
 File: assets/10_développement/code_lib_bookings_api_layer.png Graphic file (type png)
 <use assets/10_développement/code_lib_bookings_api_layer.png>
 Package pdftex.def Info: assets/10_développement/code_lib_bookings_api_layer.png  used on input line 128.
 (pdftex.def)             Requested size: 375.80544pt x 121.97002pt.
-<assets/10_développement/code_lib_bookings_api_functions.png, id=370, 586.19pt x 600.2425pt>
+<assets/10_développement/code_lib_bookings_api_functions.png, id=374, 586.19pt x 600.2425pt>
 File: assets/10_développement/code_lib_bookings_api_functions.png Graphic file (type png)
 <use assets/10_développement/code_lib_bookings_api_functions.png>
 Package pdftex.def Info: assets/10_développement/code_lib_bookings_api_functions.png  used on input line 139.
 (pdftex.def)             Requested size: 281.85587pt x 288.60771pt.
 
 
-[38 <./assets/10_développement/code_lib_bookings_api_layer.png> <./assets/10_développement/code_lib_bookings_api_functions.png>]
-<assets/10_développement/code_lib_bookings_canbook.png, id=381, 678.535pt x 220.825pt>
+[39 <./assets/10_développement/code_lib_bookings_api_layer.png> <./assets/10_développement/code_lib_bookings_api_functions.png>]
+<assets/10_développement/code_lib_bookings_canbook.png, id=385, 678.535pt x 220.825pt>
 File: assets/10_développement/code_lib_bookings_canbook.png Graphic file (type png)
 <use assets/10_développement/code_lib_bookings_canbook.png>
 Package pdftex.def Info: assets/10_développement/code_lib_bookings_canbook.png  used on input line 154.
 (pdftex.def)             Requested size: 375.80544pt x 122.30322pt.
-<assets/10_développement/code_lib_bookings_owner_endpoints.png, id=383, 580.1675pt x 425.59pt>
+<assets/10_développement/code_lib_bookings_owner_endpoints.png, id=387, 580.1675pt x 425.59pt>
 File: assets/10_développement/code_lib_bookings_owner_endpoints.png Graphic file (type png)
 <use assets/10_développement/code_lib_bookings_owner_endpoints.png>
 Package pdftex.def Info: assets/10_développement/code_lib_bookings_owner_endpoints.png  used on input line 165.
 (pdftex.def)             Requested size: 281.85587pt x 206.76157pt.
 
 
-[39 <./assets/10_développement/code_lib_bookings_canbook.png> <./assets/10_développement/code_lib_bookings_owner_endpoints.png>]
-<assets/10_développement/structure_back.png, id=394, 784.9325pt x 301.125pt>
+[40 <./assets/10_développement/code_lib_bookings_canbook.png> <./assets/10_développement/code_lib_bookings_owner_endpoints.png>]
+<assets/10_développement/structure_back.png, id=398, 784.9325pt x 301.125pt>
 File: assets/10_développement/structure_back.png Graphic file (type png)
 <use assets/10_développement/structure_back.png>
 Package pdftex.def Info: assets/10_développement/structure_back.png  used on input line 182.
 (pdftex.def)             Requested size: 469.75502pt x 180.2169pt.
 
 
-[40 <./assets/10_développement/structure_back.png>]
-<assets/10_développement/code_backend_bookings_post_overview1.png, id=402, 606.265pt x 130.4875pt>
+[41 <./assets/10_développement/structure_back.png>]
+<assets/10_développement/code_backend_bookings_post_overview1.png, id=406, 606.265pt x 130.4875pt>
 File: assets/10_développement/code_backend_bookings_post_overview1.png Graphic file (type png)
 <use assets/10_développement/code_backend_bookings_post_overview1.png>
 Package pdftex.def Info: assets/10_développement/code_backend_bookings_post_overview1.png  used on input line 200.
 (pdftex.def)             Requested size: 281.85587pt x 60.66411pt.
-<assets/10_développement/code_backend_bookings_post_overview2.png, id=403, 452.69125pt x 42.1575pt>
+<assets/10_développement/code_backend_bookings_post_overview2.png, id=407, 452.69125pt x 42.1575pt>
 File: assets/10_développement/code_backend_bookings_post_overview2.png Graphic file (type png)
 <use assets/10_développement/code_backend_bookings_post_overview2.png>
 Package pdftex.def Info: assets/10_développement/code_backend_bookings_post_overview2.png  used on input line 201.
 (pdftex.def)             Requested size: 281.85587pt x 26.248pt.
-<assets/10_développement/code_backend_bookings_mode1_validation_conflict.png, id=405, 832.10875pt x 194.7275pt>
+<assets/10_développement/code_backend_bookings_mode1_validation_conflict.png, id=409, 832.10875pt x 194.7275pt>
 File: assets/10_développement/code_backend_bookings_mode1_validation_conflict.png Graphic file (type png)
 <use assets/10_développement/code_backend_bookings_mode1_validation_conflict.png>
 Package pdftex.def Info: assets/10_développement/code_backend_bookings_mode1_validation_conflict.png  used on input line 212.
 (pdftex.def)             Requested size: 375.80544pt x 87.94447pt.
-<assets/10_développement/code_backend_bookings_mode2_validation_conflict.png, id=407, 845.1575pt x 153.57375pt>
+<assets/10_développement/code_backend_bookings_mode2_validation_conflict.png, id=411, 845.1575pt x 153.57375pt>
 File: assets/10_développement/code_backend_bookings_mode2_validation_conflict.png Graphic file (type png)
 <use assets/10_développement/code_backend_bookings_mode2_validation_conflict.png>
 Package pdftex.def Info: assets/10_développement/code_backend_bookings_mode2_validation_conflict.png  used on input line 223.
 (pdftex.def)             Requested size: 375.80544pt x 68.2897pt.
 
 
-[41 <./assets/10_développement/code_backend_bookings_post_overview1.png> <./assets/10_développement/code_backend_bookings_post_overview2.png> <./assets/10_développement/code_backend_bookings_mode1_validation_conflict.png> <./assets/10_développement/code_backend_bookings_mode2_validation_conflict.png>]
-<assets/10_développement/code_backend_bookings_conflict_helpers1.png, id=420, 730.73pt x 389.455pt>
+[42 <./assets/10_développement/code_backend_bookings_post_overview1.png> <./assets/10_développement/code_backend_bookings_post_overview2.png> <./assets/10_développement/code_backend_bookings_mode1_validation_conflict.png> <./assets/10_développement/code_backend_bookings_mode2_validation_conflict.png>]
+<assets/10_développement/code_backend_bookings_conflict_helpers1.png, id=425, 730.73pt x 389.455pt>
 File: assets/10_développement/code_backend_bookings_conflict_helpers1.png Graphic file (type png)
 <use assets/10_développement/code_backend_bookings_conflict_helpers1.png>
 Package pdftex.def Info: assets/10_développement/code_backend_bookings_conflict_helpers1.png  used on input line 236.
 (pdftex.def)             Requested size: 469.75502pt x 250.3616pt.
-<assets/10_développement/code_backend_bookings_conflict_helpers2.png, id=421, 704.6325pt x 481.8pt>
+<assets/10_développement/code_backend_bookings_conflict_helpers2.png, id=426, 704.6325pt x 481.8pt>
 File: assets/10_développement/code_backend_bookings_conflict_helpers2.png Graphic file (type png)
 <use assets/10_développement/code_backend_bookings_conflict_helpers2.png>
 Package pdftex.def Info: assets/10_développement/code_backend_bookings_conflict_helpers2.png  used on input line 237.
 (pdftex.def)             Requested size: 469.75502pt x 321.20164pt.
 
 
-[42 <./assets/10_développement/code_backend_bookings_conflict_helpers1.png> <./assets/10_développement/code_backend_bookings_conflict_helpers2.png>]
-<assets/10_développement/code_backend_bookings_mode1_transaction.png, id=431, 1220.56pt x 395.4775pt>
+[43 <./assets/10_développement/code_backend_bookings_conflict_helpers1.png> <./assets/10_développement/code_backend_bookings_conflict_helpers2.png>]
+<assets/10_développement/code_backend_bookings_mode1_transaction.png, id=435, 1220.56pt x 395.4775pt>
 File: assets/10_développement/code_backend_bookings_mode1_transaction.png Graphic file (type png)
 <use assets/10_développement/code_backend_bookings_mode1_transaction.png>
 Package pdftex.def Info: assets/10_développement/code_backend_bookings_mode1_transaction.png  used on input line 252.
 (pdftex.def)             Requested size: 469.75502pt x 152.20801pt.
-<assets/10_développement/code_backend_bookings_mode2_transaction.png, id=433, 1194.4625pt x 564.1075pt>
+<assets/10_développement/code_backend_bookings_mode2_transaction.png, id=437, 1194.4625pt x 564.1075pt>
 File: assets/10_développement/code_backend_bookings_mode2_transaction.png Graphic file (type png)
 <use assets/10_développement/code_backend_bookings_mode2_transaction.png>
 Package pdftex.def Info: assets/10_développement/code_backend_bookings_mode2_transaction.png  used on input line 263.
 (pdftex.def)             Requested size: 469.75502pt x 221.85165pt.
 
 
-[43 <./assets/10_développement/code_backend_bookings_mode1_transaction.png> <./assets/10_développement/code_backend_bookings_mode2_transaction.png>]
-<assets/10_développement/code_prisma_availabilityslot_booking_1.png, id=443, 860.21375pt x 344.28625pt>
+[44 <./assets/10_développement/code_backend_bookings_mode1_transaction.png> <./assets/10_développement/code_backend_bookings_mode2_transaction.png>]
+<assets/10_développement/code_prisma_availabilityslot_booking_1.png, id=447, 860.21375pt x 344.28625pt>
 File: assets/10_développement/code_prisma_availabilityslot_booking_1.png Graphic file (type png)
 <use assets/10_développement/code_prisma_availabilityslot_booking_1.png>
 Package pdftex.def Info: assets/10_développement/code_prisma_availabilityslot_booking_1.png  used on input line 281.
 (pdftex.def)             Requested size: 469.75502pt x 188.01315pt.
-<assets/10_développement/code_prisma_availabilityslot_booking_2.png, id=444, 917.4275pt x 376.40625pt>
+<assets/10_développement/code_prisma_availabilityslot_booking_2.png, id=448, 917.4275pt x 376.40625pt>
 File: assets/10_développement/code_prisma_availabilityslot_booking_2.png Graphic file (type png)
 <use assets/10_développement/code_prisma_availabilityslot_booking_2.png>
 Package pdftex.def Info: assets/10_développement/code_prisma_availabilityslot_booking_2.png  used on input line 282.
 (pdftex.def)             Requested size: 469.75502pt x 192.73427pt.
 
 
-[44 <./assets/10_développement/code_prisma_availabilityslot_booking_1.png> <./assets/10_développement/code_prisma_availabilityslot_booking_2.png>]
-<assets/10_développement/code_backend_auth_middleware_1.png, id=453, 782.925pt x 359.3425pt>
+[45 <./assets/10_développement/code_prisma_availabilityslot_booking_1.png> <./assets/10_développement/code_prisma_availabilityslot_booking_2.png>]
+<assets/10_développement/code_backend_auth_middleware_1.png, id=457, 782.925pt x 359.3425pt>
 File: assets/10_développement/code_backend_auth_middleware_1.png Graphic file (type png)
 <use assets/10_développement/code_backend_auth_middleware_1.png>
 Package pdftex.def Info: assets/10_développement/code_backend_auth_middleware_1.png  used on input line 302.
 (pdftex.def)             Requested size: 281.85587pt x 129.36319pt.
-<assets/10_développement/code_backend_auth_middleware_2.png, id=454, 604.2575pt x 192.72pt>
+<assets/10_développement/code_backend_auth_middleware_2.png, id=458, 604.2575pt x 192.72pt>
 File: assets/10_développement/code_backend_auth_middleware_2.png Graphic file (type png)
 <use assets/10_développement/code_backend_auth_middleware_2.png>
 Package pdftex.def Info: assets/10_développement/code_backend_auth_middleware_2.png  used on input line 303.
 (pdftex.def)             Requested size: 281.85587pt x 89.89322pt.
-<assets/10_développement/code_backend_booking_authorization_self.png, id=456, 763.85374pt x 205.76875pt>
+<assets/10_développement/code_backend_booking_authorization_self.png, id=460, 763.85374pt x 205.76875pt>
 File: assets/10_développement/code_backend_booking_authorization_self.png Graphic file (type png)
 <use assets/10_développement/code_backend_booking_authorization_self.png>
 Package pdftex.def Info: assets/10_développement/code_backend_booking_authorization_self.png  used on input line 316.
 (pdftex.def)             Requested size: 281.85587pt x 75.92601pt.
-<assets/10_développement/code_backend_booking_authorization_owner.png, id=458, 521.95pt x 97.36375pt>
+<assets/10_développement/code_backend_booking_authorization_owner.png, id=462, 521.95pt x 97.36375pt>
 File: assets/10_développement/code_backend_booking_authorization_owner.png Graphic file (type png)
 <use assets/10_développement/code_backend_booking_authorization_owner.png>
 Package pdftex.def Info: assets/10_développement/code_backend_booking_authorization_owner.png  used on input line 327.
 (pdftex.def)             Requested size: 281.85587pt x 52.57712pt.
 
 
-[45 <./assets/10_développement/code_backend_auth_middleware_1.png> <./assets/10_développement/code_backend_auth_middleware_2.png> <./assets/10_développement/code_backend_booking_authorization_self.png>]
-<assets/10_développement/code_backend_validation_errors.png, id=470, 578.16pt x 212.795pt>
+[46 <./assets/10_développement/code_backend_auth_middleware_1.png> <./assets/10_développement/code_backend_auth_middleware_2.png> <./assets/10_développement/code_backend_booking_authorization_self.png>]
+<assets/10_développement/code_backend_validation_errors.png, id=474, 578.16pt x 212.795pt>
 File: assets/10_développement/code_backend_validation_errors.png Graphic file (type png)
 <use assets/10_développement/code_backend_validation_errors.png>
 Package pdftex.def Info: assets/10_développement/code_backend_validation_errors.png  used on input line 338.
 (pdftex.def)             Requested size: 281.85587pt x 103.73795pt.
 ) (./chapters/11_CI_CD.tex
 
-[46 <./assets/10_développement/code_backend_booking_authorization_owner.png> <./assets/10_développement/code_backend_validation_errors.png>]
+[47 <./assets/10_développement/code_backend_booking_authorization_owner.png> <./assets/10_développement/code_backend_validation_errors.png>]
 Chapitre 10.
-<assets/11_CI_CD/workflows.png, id=478, 910.40125pt x 446.66875pt>
+<assets/11_CI_CD/workflows.png, id=482, 910.40125pt x 446.66875pt>
 File: assets/11_CI_CD/workflows.png Graphic file (type png)
 <use assets/11_CI_CD/workflows.png>
 Package pdftex.def Info: assets/11_CI_CD/workflows.png  used on input line 12.
 (pdftex.def)             Requested size: 399.29463pt x 195.9078pt.
 
 
-[47
+[48
 
  <./assets/11_CI_CD/workflows.png>]
-<assets/11_CI_CD/backend_tests.png, id=485, 469.755pt x 749.80125pt>
+<assets/11_CI_CD/backend_tests.png, id=490, 469.755pt x 749.80125pt>
 File: assets/11_CI_CD/backend_tests.png Graphic file (type png)
 <use assets/11_CI_CD/backend_tests.png>
 Package pdftex.def Info: assets/11_CI_CD/backend_tests.png  used on input line 26.
@@ -1393,159 +1395,159 @@ LaTeX Info: Symbol \textrightarrow not provided by
             Default family used instead on input line 27.
 ) (./chapters/12_tests_unitaires_tests_integrations.tex
 
-[48 <./assets/11_CI_CD/backend_tests.png>]
+[49 <./assets/11_CI_CD/backend_tests.png>]
 Chapitre 11.
-<assets/12_tests_unitaires_tests_integrations/code_packagejson_test_scripts.png, id=495, 578.16pt x 234.8775pt>
+<assets/12_tests_unitaires_tests_integrations/code_packagejson_test_scripts.png, id=499, 578.16pt x 234.8775pt>
 File: assets/12_tests_unitaires_tests_integrations/code_packagejson_test_scripts.png Graphic file (type png)
 <use assets/12_tests_unitaires_tests_integrations/code_packagejson_test_scripts.png>
 Package pdftex.def Info: assets/12_tests_unitaires_tests_integrations/code_packagejson_test_scripts.png  used on input line 11.
 (pdftex.def)             Requested size: 446.26582pt x 181.29347pt.
 
 
-[49
+[50
 
  <./assets/12_tests_unitaires_tests_integrations/code_packagejson_test_scripts.png>]
-<assets/12_tests_unitaires_tests_integrations/code_test_formutils1.png, id=503, 587.19376pt x 695.59875pt>
+<assets/12_tests_unitaires_tests_integrations/code_test_formutils1.png, id=507, 587.19376pt x 695.59875pt>
 File: assets/12_tests_unitaires_tests_integrations/code_test_formutils1.png Graphic file (type png)
 <use assets/12_tests_unitaires_tests_integrations/code_test_formutils1.png>
 Package pdftex.def Info: assets/12_tests_unitaires_tests_integrations/code_test_formutils1.png  used on input line 29.
 (pdftex.def)             Requested size: 234.8775pt x 278.23457pt.
-<assets/12_tests_unitaires_tests_integrations/code_test_formutils2.png, id=504, 647.41875pt x 501.875pt>
+<assets/12_tests_unitaires_tests_integrations/code_test_formutils2.png, id=508, 647.41875pt x 501.875pt>
 File: assets/12_tests_unitaires_tests_integrations/code_test_formutils2.png Graphic file (type png)
 <use assets/12_tests_unitaires_tests_integrations/code_test_formutils2.png>
 Package pdftex.def Info: assets/12_tests_unitaires_tests_integrations/code_test_formutils2.png  used on input line 30.
 (pdftex.def)             Requested size: 234.8775pt x 182.07626pt.
 
 
-[50 <./assets/12_tests_unitaires_tests_integrations/code_test_formutils1.png> <./assets/12_tests_unitaires_tests_integrations/code_test_formutils2.png>]
-<assets/12_tests_unitaires_tests_integrations/code_test_hashpassword_bcrypt.png, id=513, 566.115pt x 345.29pt>
+[51 <./assets/12_tests_unitaires_tests_integrations/code_test_formutils1.png> <./assets/12_tests_unitaires_tests_integrations/code_test_formutils2.png>]
+<assets/12_tests_unitaires_tests_integrations/code_test_hashpassword_bcrypt.png, id=518, 566.115pt x 345.29pt>
 File: assets/12_tests_unitaires_tests_integrations/code_test_hashpassword_bcrypt.png Graphic file (type png)
 <use assets/12_tests_unitaires_tests_integrations/code_test_hashpassword_bcrypt.png>
 Package pdftex.def Info: assets/12_tests_unitaires_tests_integrations/code_test_hashpassword_bcrypt.png  used on input line 42.
 (pdftex.def)             Requested size: 281.85587pt x 171.91748pt.
-<assets/12_tests_unitaires_tests_integrations/code_test_smoke.png, id=515, 493.845pt x 314.17375pt>
+<assets/12_tests_unitaires_tests_integrations/code_test_smoke.png, id=520, 493.845pt x 314.17375pt>
 File: assets/12_tests_unitaires_tests_integrations/code_test_smoke.png Graphic file (type png)
 <use assets/12_tests_unitaires_tests_integrations/code_test_smoke.png>
 Package pdftex.def Info: assets/12_tests_unitaires_tests_integrations/code_test_smoke.png  used on input line 60.
 (pdftex.def)             Requested size: 281.85587pt x 179.3062pt.
 
 
-[51 <./assets/12_tests_unitaires_tests_integrations/code_test_hashpassword_bcrypt.png> <./assets/12_tests_unitaires_tests_integrations/code_test_smoke.png>]
-<assets/12_tests_unitaires_tests_integrations/code_test_gardens_get_list.png, id=526, 674.52pt x 700.6175pt>
+[52 <./assets/12_tests_unitaires_tests_integrations/code_test_hashpassword_bcrypt.png> <./assets/12_tests_unitaires_tests_integrations/code_test_smoke.png>]
+<assets/12_tests_unitaires_tests_integrations/code_test_gardens_get_list.png, id=530, 674.52pt x 700.6175pt>
 File: assets/12_tests_unitaires_tests_integrations/code_test_gardens_get_list.png Graphic file (type png)
 <use assets/12_tests_unitaires_tests_integrations/code_test_gardens_get_list.png>
 Package pdftex.def Info: assets/12_tests_unitaires_tests_integrations/code_test_gardens_get_list.png  used on input line 72.
 (pdftex.def)             Requested size: 281.85587pt x 292.76067pt.
 ) (./chapters/13_tests_E2E.tex
 
-[52 <./assets/12_tests_unitaires_tests_integrations/code_test_gardens_get_list.png>]
+[53 <./assets/12_tests_unitaires_tests_integrations/code_test_gardens_get_list.png>]
 Chapitre 12.
-<assets/13_tests_E2E/code_e2e_gardens_spec.png, id=534, 713.66624pt x 509.905pt>
+<assets/13_tests_E2E/code_e2e_gardens_spec.png, id=538, 713.66624pt x 509.905pt>
 File: assets/13_tests_E2E/code_e2e_gardens_spec.png Graphic file (type png)
 <use assets/13_tests_E2E/code_e2e_gardens_spec.png>
 Package pdftex.def Info: assets/13_tests_E2E/code_e2e_gardens_spec.png  used on input line 14.
 (pdftex.def)             Requested size: 281.85587pt x 201.38303pt.
 
 
-[53
+[54
 
  <./assets/13_tests_E2E/code_e2e_gardens_spec.png>]
-<assets/13_tests_E2E/code_e2e_register_spec1.png, id=542, 639.38875pt x 659.46375pt>
+<assets/13_tests_E2E/code_e2e_register_spec1.png, id=547, 639.38875pt x 659.46375pt>
 File: assets/13_tests_E2E/code_e2e_register_spec1.png Graphic file (type png)
 <use assets/13_tests_E2E/code_e2e_register_spec1.png>
 Package pdftex.def Info: assets/13_tests_E2E/code_e2e_register_spec1.png  used on input line 27.
 (pdftex.def)             Requested size: 281.85587pt x 290.70831pt.
-<assets/13_tests_E2E/code_e2e_register_spec2.png, id=543, 562.1pt x 252.945pt>
+<assets/13_tests_E2E/code_e2e_register_spec2.png, id=548, 562.1pt x 252.945pt>
 File: assets/13_tests_E2E/code_e2e_register_spec2.png Graphic file (type png)
 <use assets/13_tests_E2E/code_e2e_register_spec2.png>
 Package pdftex.def Info: assets/13_tests_E2E/code_e2e_register_spec2.png  used on input line 28.
 (pdftex.def)             Requested size: 281.85587pt x 126.83499pt.
-<assets/13_tests_E2E/code_github_actions_playwright1.png, id=545, 622.325pt x 621.32124pt>
+<assets/13_tests_E2E/code_github_actions_playwright1.png, id=550, 622.325pt x 621.32124pt>
 File: assets/13_tests_E2E/code_github_actions_playwright1.png Graphic file (type png)
 <use assets/13_tests_E2E/code_github_actions_playwright1.png>
 Package pdftex.def Info: assets/13_tests_E2E/code_github_actions_playwright1.png  used on input line 40.
 (pdftex.def)             Requested size: 187.89914pt x 187.59236pt.
-<assets/13_tests_E2E/code_github_actions_playwright2.png, id=546, 513.92pt x 630.355pt>
+<assets/13_tests_E2E/code_github_actions_playwright2.png, id=551, 513.92pt x 630.355pt>
 File: assets/13_tests_E2E/code_github_actions_playwright2.png Graphic file (type png)
 <use assets/13_tests_E2E/code_github_actions_playwright2.png>
 Package pdftex.def Info: assets/13_tests_E2E/code_github_actions_playwright2.png  used on input line 41.
 (pdftex.def)             Requested size: 187.89914pt x 230.46721pt.
-<assets/13_tests_E2E/code_github_actions_playwright3.png, id=547, 947.54pt x 581.17125pt>
+<assets/13_tests_E2E/code_github_actions_playwright3.png, id=552, 947.54pt x 581.17125pt>
 File: assets/13_tests_E2E/code_github_actions_playwright3.png Graphic file (type png)
 <use assets/13_tests_E2E/code_github_actions_playwright3.png>
 Package pdftex.def Info: assets/13_tests_E2E/code_github_actions_playwright3.png  used on input line 42.
 (pdftex.def)             Requested size: 281.85587pt x 172.87177pt.
 
 
-[54 <./assets/13_tests_E2E/code_e2e_register_spec1.png> <./assets/13_tests_E2E/code_e2e_register_spec2.png>]) (./chapters/14_déploiement.tex
+[55 <./assets/13_tests_E2E/code_e2e_register_spec1.png> <./assets/13_tests_E2E/code_e2e_register_spec2.png>]) (./chapters/14_déploiement.tex
 
-[55 <./assets/13_tests_E2E/code_github_actions_playwright1.png> <./assets/13_tests_E2E/code_github_actions_playwright2.png> <./assets/13_tests_E2E/code_github_actions_playwright3.png>]
+[56 <./assets/13_tests_E2E/code_github_actions_playwright1.png> <./assets/13_tests_E2E/code_github_actions_playwright2.png> <./assets/13_tests_E2E/code_github_actions_playwright3.png>]
 Chapitre 13.
-<assets/14_déploiement/schema.png, id=565, 766.865pt x 349.305pt>
+<assets/14_déploiement/schema.png, id=569, 766.865pt x 349.305pt>
 File: assets/14_déploiement/schema.png Graphic file (type png)
 <use assets/14_déploiement/schema.png>
 Package pdftex.def Info: assets/14_déploiement/schema.png  used on input line 13.
 (pdftex.def)             Requested size: 469.75502pt x 213.97649pt.
 
 
-[56
+[57
 
  <./assets/14_déploiement/schema.png>]
-<assets/14_déploiement/vercel_deploy_card.png, id=575, 574.145pt x 227.85126pt>
+<assets/14_déploiement/vercel_deploy_card.png, id=579, 574.145pt x 227.85126pt>
 File: assets/14_déploiement/vercel_deploy_card.png Graphic file (type png)
 <use assets/14_déploiement/vercel_deploy_card.png>
 Package pdftex.def Info: assets/14_déploiement/vercel_deploy_card.png  used on input line 31.
 (pdftex.def)             Requested size: 281.85587pt x 111.85669pt.
-<assets/14_déploiement/render_env_vars.png, id=576, 574.145pt x 343.2825pt>
+<assets/14_déploiement/render_env_vars.png, id=580, 574.145pt x 343.2825pt>
 File: assets/14_déploiement/render_env_vars.png Graphic file (type png)
 <use assets/14_déploiement/render_env_vars.png>
 Package pdftex.def Info: assets/14_déploiement/render_env_vars.png  used on input line 42.
 (pdftex.def)             Requested size: 375.80544pt x 224.69714pt.
 
 
-[57 <./assets/14_déploiement/vercel_deploy_card.png> <./assets/14_déploiement/render_env_vars.png>]
-<assets/14_déploiement/neon_prisma_migrations.png, id=585, 753.81625pt x 371.3875pt>
+[58 <./assets/14_déploiement/vercel_deploy_card.png> <./assets/14_déploiement/render_env_vars.png>]
+<assets/14_déploiement/neon_prisma_migrations.png, id=589, 753.81625pt x 371.3875pt>
 File: assets/14_déploiement/neon_prisma_migrations.png Graphic file (type png)
 <use assets/14_déploiement/neon_prisma_migrations.png>
 Package pdftex.def Info: assets/14_déploiement/neon_prisma_migrations.png  used on input line 53.
 (pdftex.def)             Requested size: 469.75502pt x 231.43657pt.
 ) (./chapters/15_limites_améliorations_perspectives.tex
 
-[58 <./assets/14_déploiement/neon_prisma_migrations.png>]
+[59 <./assets/14_déploiement/neon_prisma_migrations.png>]
 Chapitre 14.
 ) (./chapters/16_conclusion.tex
 
-[59
+[60
 
 ]
 Chapitre 15.
 ) (./annexes/annexes.tex
 
-[60
+[61
 
 ]
-<assets/17_annexe/Annexe_A_Screen1.png, id=602, 376.40625pt x 506.89375pt>
+<assets/17_annexe/Annexe_A_Screen1.png, id=606, 376.40625pt x 506.89375pt>
 File: assets/17_annexe/Annexe_A_Screen1.png Graphic file (type png)
 <use assets/17_annexe/Annexe_A_Screen1.png>
 Package pdftex.def Info: assets/17_annexe/Annexe_A_Screen1.png  used on input line 15.
 (pdftex.def)             Requested size: 225.4804pt x 303.65132pt.
-<assets/17_annexe/Annexe_A_Screen2.png, id=603, 366.36874pt x 503.8825pt>
+<assets/17_annexe/Annexe_A_Screen2.png, id=607, 366.36874pt x 503.8825pt>
 File: assets/17_annexe/Annexe_A_Screen2.png Graphic file (type png)
 <use assets/17_annexe/Annexe_A_Screen2.png>
 Package pdftex.def Info: assets/17_annexe/Annexe_A_Screen2.png  used on input line 19.
 (pdftex.def)             Requested size: 225.4804pt x 310.11272pt.
 
 
-[61
+[62
 
 
  <./assets/17_annexe/Annexe_A_Screen1.png> <./assets/17_annexe/Annexe_A_Screen2.png>]
-<assets/17_annexe/Annexe_A_Questionnaire.pdf, id=612, 597.23125pt x 845.1575pt>
+<assets/17_annexe/Annexe_A_Questionnaire.pdf, id=616, 597.23125pt x 845.1575pt>
 File: assets/17_annexe/Annexe_A_Questionnaire.pdf Graphic file (type pdf)
 <use assets/17_annexe/Annexe_A_Questionnaire.pdf>
 Package pdftex.def Info: assets/17_annexe/Annexe_A_Questionnaire.pdf  used on input line 33.
 (pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
-<assets/17_annexe/Annexe_A_Questionnaire.pdf, id=614, page=1, 597.23125pt x 845.1575pt>
+<assets/17_annexe/Annexe_A_Questionnaire.pdf, id=618, page=1, 597.23125pt x 845.1575pt>
 File: assets/17_annexe/Annexe_A_Questionnaire.pdf Graphic file (type pdf)
 <use assets/17_annexe/Annexe_A_Questionnaire.pdf, page 1>
 Package pdftex.def Info: assets/17_annexe/Annexe_A_Questionnaire.pdf , page1 used on input line 33.
@@ -1568,106 +1570,106 @@ File: assets/17_annexe/Annexe_A_Questionnaire.pdf Graphic file (type pdf)
 <use assets/17_annexe/Annexe_A_Questionnaire.pdf, page 1>
 Package pdftex.def Info: assets/17_annexe/Annexe_A_Questionnaire.pdf , page1 used on input line 33.
 (pdftex.def)             Requested size: 567.36647pt x 802.89508pt.
-[62
-
-
- <./assets/17_annexe/Annexe_A_Questionnaire.pdf>]
-<assets/17_annexe/Annexe_A_Questionnaire.pdf, id=678, page=2, 597.23125pt x 845.1575pt>
-File: assets/17_annexe/Annexe_A_Questionnaire.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_A_Questionnaire.pdf, page 2>
-Package pdftex.def Info: assets/17_annexe/Annexe_A_Questionnaire.pdf , page2 used on input line 33.
-(pdftex.def)             Requested size: 567.36647pt x 802.89508pt.
-File: assets/17_annexe/Annexe_A_Questionnaire.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_A_Questionnaire.pdf, page 2>
-Package pdftex.def Info: assets/17_annexe/Annexe_A_Questionnaire.pdf , page2 used on input line 33.
-(pdftex.def)             Requested size: 567.36647pt x 802.89508pt.
-
-
-File: assets/17_annexe/Annexe_A_Questionnaire.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_A_Questionnaire.pdf, page 2>
-Package pdftex.def Info: assets/17_annexe/Annexe_A_Questionnaire.pdf , page2 used on input line 33.
-(pdftex.def)             Requested size: 567.36647pt x 802.89508pt.
 [63
 
+
  <./assets/17_annexe/Annexe_A_Questionnaire.pdf>]
-<assets/17_annexe/Annexe_A_Questionnaire.pdf, id=683, page=3, 597.23125pt x 845.1575pt>
+<assets/17_annexe/Annexe_A_Questionnaire.pdf, id=682, page=2, 597.23125pt x 845.1575pt>
 File: assets/17_annexe/Annexe_A_Questionnaire.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_A_Questionnaire.pdf, page 3>
-Package pdftex.def Info: assets/17_annexe/Annexe_A_Questionnaire.pdf , page3 used on input line 33.
+<use assets/17_annexe/Annexe_A_Questionnaire.pdf, page 2>
+Package pdftex.def Info: assets/17_annexe/Annexe_A_Questionnaire.pdf , page2 used on input line 33.
 (pdftex.def)             Requested size: 567.36647pt x 802.89508pt.
 File: assets/17_annexe/Annexe_A_Questionnaire.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_A_Questionnaire.pdf, page 3>
-Package pdftex.def Info: assets/17_annexe/Annexe_A_Questionnaire.pdf , page3 used on input line 33.
+<use assets/17_annexe/Annexe_A_Questionnaire.pdf, page 2>
+Package pdftex.def Info: assets/17_annexe/Annexe_A_Questionnaire.pdf , page2 used on input line 33.
 (pdftex.def)             Requested size: 567.36647pt x 802.89508pt.
 
 
 File: assets/17_annexe/Annexe_A_Questionnaire.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_A_Questionnaire.pdf, page 3>
-Package pdftex.def Info: assets/17_annexe/Annexe_A_Questionnaire.pdf , page3 used on input line 33.
+<use assets/17_annexe/Annexe_A_Questionnaire.pdf, page 2>
+Package pdftex.def Info: assets/17_annexe/Annexe_A_Questionnaire.pdf , page2 used on input line 33.
 (pdftex.def)             Requested size: 567.36647pt x 802.89508pt.
 [64
 
  <./assets/17_annexe/Annexe_A_Questionnaire.pdf>]
-<assets/17_annexe/Annexe_A_Questionnaire.pdf, id=688, page=4, 597.23125pt x 845.1575pt>
+<assets/17_annexe/Annexe_A_Questionnaire.pdf, id=687, page=3, 597.23125pt x 845.1575pt>
 File: assets/17_annexe/Annexe_A_Questionnaire.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_A_Questionnaire.pdf, page 4>
-Package pdftex.def Info: assets/17_annexe/Annexe_A_Questionnaire.pdf , page4 used on input line 33.
+<use assets/17_annexe/Annexe_A_Questionnaire.pdf, page 3>
+Package pdftex.def Info: assets/17_annexe/Annexe_A_Questionnaire.pdf , page3 used on input line 33.
 (pdftex.def)             Requested size: 567.36647pt x 802.89508pt.
 File: assets/17_annexe/Annexe_A_Questionnaire.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_A_Questionnaire.pdf, page 4>
-Package pdftex.def Info: assets/17_annexe/Annexe_A_Questionnaire.pdf , page4 used on input line 33.
+<use assets/17_annexe/Annexe_A_Questionnaire.pdf, page 3>
+Package pdftex.def Info: assets/17_annexe/Annexe_A_Questionnaire.pdf , page3 used on input line 33.
 (pdftex.def)             Requested size: 567.36647pt x 802.89508pt.
 
 
 File: assets/17_annexe/Annexe_A_Questionnaire.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_A_Questionnaire.pdf, page 4>
-Package pdftex.def Info: assets/17_annexe/Annexe_A_Questionnaire.pdf , page4 used on input line 33.
+<use assets/17_annexe/Annexe_A_Questionnaire.pdf, page 3>
+Package pdftex.def Info: assets/17_annexe/Annexe_A_Questionnaire.pdf , page3 used on input line 33.
 (pdftex.def)             Requested size: 567.36647pt x 802.89508pt.
 [65
 
  <./assets/17_annexe/Annexe_A_Questionnaire.pdf>]
-<assets/17_annexe/Annexe_A_Questionnaire.pdf, id=693, page=5, 597.23125pt x 845.1575pt>
+<assets/17_annexe/Annexe_A_Questionnaire.pdf, id=692, page=4, 597.23125pt x 845.1575pt>
 File: assets/17_annexe/Annexe_A_Questionnaire.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_A_Questionnaire.pdf, page 5>
-Package pdftex.def Info: assets/17_annexe/Annexe_A_Questionnaire.pdf , page5 used on input line 33.
+<use assets/17_annexe/Annexe_A_Questionnaire.pdf, page 4>
+Package pdftex.def Info: assets/17_annexe/Annexe_A_Questionnaire.pdf , page4 used on input line 33.
 (pdftex.def)             Requested size: 567.36647pt x 802.89508pt.
 File: assets/17_annexe/Annexe_A_Questionnaire.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_A_Questionnaire.pdf, page 5>
-Package pdftex.def Info: assets/17_annexe/Annexe_A_Questionnaire.pdf , page5 used on input line 33.
+<use assets/17_annexe/Annexe_A_Questionnaire.pdf, page 4>
+Package pdftex.def Info: assets/17_annexe/Annexe_A_Questionnaire.pdf , page4 used on input line 33.
 (pdftex.def)             Requested size: 567.36647pt x 802.89508pt.
 
 
 File: assets/17_annexe/Annexe_A_Questionnaire.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_A_Questionnaire.pdf, page 5>
-Package pdftex.def Info: assets/17_annexe/Annexe_A_Questionnaire.pdf , page5 used on input line 33.
+<use assets/17_annexe/Annexe_A_Questionnaire.pdf, page 4>
+Package pdftex.def Info: assets/17_annexe/Annexe_A_Questionnaire.pdf , page4 used on input line 33.
 (pdftex.def)             Requested size: 567.36647pt x 802.89508pt.
 [66
 
  <./assets/17_annexe/Annexe_A_Questionnaire.pdf>]
-<assets/17_annexe/Annexe_A_Questionnaire.pdf, id=699, page=6, 597.23125pt x 845.1575pt>
+<assets/17_annexe/Annexe_A_Questionnaire.pdf, id=698, page=5, 597.23125pt x 845.1575pt>
 File: assets/17_annexe/Annexe_A_Questionnaire.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_A_Questionnaire.pdf, page 6>
-Package pdftex.def Info: assets/17_annexe/Annexe_A_Questionnaire.pdf , page6 used on input line 33.
+<use assets/17_annexe/Annexe_A_Questionnaire.pdf, page 5>
+Package pdftex.def Info: assets/17_annexe/Annexe_A_Questionnaire.pdf , page5 used on input line 33.
 (pdftex.def)             Requested size: 567.36647pt x 802.89508pt.
 File: assets/17_annexe/Annexe_A_Questionnaire.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_A_Questionnaire.pdf, page 6>
-Package pdftex.def Info: assets/17_annexe/Annexe_A_Questionnaire.pdf , page6 used on input line 33.
+<use assets/17_annexe/Annexe_A_Questionnaire.pdf, page 5>
+Package pdftex.def Info: assets/17_annexe/Annexe_A_Questionnaire.pdf , page5 used on input line 33.
 (pdftex.def)             Requested size: 567.36647pt x 802.89508pt.
 
 
 File: assets/17_annexe/Annexe_A_Questionnaire.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_A_Questionnaire.pdf, page 6>
-Package pdftex.def Info: assets/17_annexe/Annexe_A_Questionnaire.pdf , page6 used on input line 33.
+<use assets/17_annexe/Annexe_A_Questionnaire.pdf, page 5>
+Package pdftex.def Info: assets/17_annexe/Annexe_A_Questionnaire.pdf , page5 used on input line 33.
 (pdftex.def)             Requested size: 567.36647pt x 802.89508pt.
 [67
 
  <./assets/17_annexe/Annexe_A_Questionnaire.pdf>]
-<assets/17_annexe/Annexe_B_Graph_Reponses1.png, id=722, 472.26437pt x 669.50125pt>
+<assets/17_annexe/Annexe_A_Questionnaire.pdf, id=703, page=6, 597.23125pt x 845.1575pt>
+File: assets/17_annexe/Annexe_A_Questionnaire.pdf Graphic file (type pdf)
+<use assets/17_annexe/Annexe_A_Questionnaire.pdf, page 6>
+Package pdftex.def Info: assets/17_annexe/Annexe_A_Questionnaire.pdf , page6 used on input line 33.
+(pdftex.def)             Requested size: 567.36647pt x 802.89508pt.
+File: assets/17_annexe/Annexe_A_Questionnaire.pdf Graphic file (type pdf)
+<use assets/17_annexe/Annexe_A_Questionnaire.pdf, page 6>
+Package pdftex.def Info: assets/17_annexe/Annexe_A_Questionnaire.pdf , page6 used on input line 33.
+(pdftex.def)             Requested size: 567.36647pt x 802.89508pt.
+
+
+File: assets/17_annexe/Annexe_A_Questionnaire.pdf Graphic file (type pdf)
+<use assets/17_annexe/Annexe_A_Questionnaire.pdf, page 6>
+Package pdftex.def Info: assets/17_annexe/Annexe_A_Questionnaire.pdf , page6 used on input line 33.
+(pdftex.def)             Requested size: 567.36647pt x 802.89508pt.
+[68
+
+ <./assets/17_annexe/Annexe_A_Questionnaire.pdf>]
+<assets/17_annexe/Annexe_B_Graph_Reponses1.png, id=726, 472.26437pt x 669.50125pt>
 File: assets/17_annexe/Annexe_B_Graph_Reponses1.png Graphic file (type png)
 <use assets/17_annexe/Annexe_B_Graph_Reponses1.png>
 Package pdftex.def Info: assets/17_annexe/Annexe_B_Graph_Reponses1.png  used on input line 52.
 (pdftex.def)             Requested size: 232.52643pt x 329.64192pt.
-<assets/17_annexe/Annexe_B_Graph_Reponses2.png, id=723, 463.7325pt x 653.44125pt>
+<assets/17_annexe/Annexe_B_Graph_Reponses2.png, id=727, 463.7325pt x 653.44125pt>
 File: assets/17_annexe/Annexe_B_Graph_Reponses2.png Graphic file (type png)
 <use assets/17_annexe/Annexe_B_Graph_Reponses2.png>
 Package pdftex.def Info: assets/17_annexe/Annexe_B_Graph_Reponses2.png  used on input line 56.
@@ -1676,47 +1678,47 @@ LaTeX Font Info:    Font shape `T1/zpltlf/m/it' will be
 (Font)              scaled to size 9.0pt on input line 60.
 
 
-[68
+[69
 
 
 
  <./assets/17_annexe/Annexe_B_Graph_Reponses1.png> <./assets/17_annexe/Annexe_B_Graph_Reponses2.png>]
-<assets/17_annexe/Annexe_B_Graph_Reponses3.png, id=731, 463.7325pt x 634.87187pt>
+<assets/17_annexe/Annexe_B_Graph_Reponses3.png, id=735, 463.7325pt x 634.87187pt>
 File: assets/17_annexe/Annexe_B_Graph_Reponses3.png Graphic file (type png)
 <use assets/17_annexe/Annexe_B_Graph_Reponses3.png>
 Package pdftex.def Info: assets/17_annexe/Annexe_B_Graph_Reponses3.png  used on input line 71.
 (pdftex.def)             Requested size: 232.52643pt x 318.34576pt.
-<assets/17_annexe/Annexe_B_Graph_Reponses4.png, id=732, 463.7325pt x 672.5125pt>
+<assets/17_annexe/Annexe_B_Graph_Reponses4.png, id=736, 463.7325pt x 672.5125pt>
 File: assets/17_annexe/Annexe_B_Graph_Reponses4.png Graphic file (type png)
 <use assets/17_annexe/Annexe_B_Graph_Reponses4.png>
 Package pdftex.def Info: assets/17_annexe/Annexe_B_Graph_Reponses4.png  used on input line 75.
 (pdftex.def)             Requested size: 232.52643pt x 337.22002pt.
 
 
-[69
+[70
 
  <./assets/17_annexe/Annexe_B_Graph_Reponses3.png> <./assets/17_annexe/Annexe_B_Graph_Reponses4.png>]
-<assets/17_annexe/Annexe_B_Graph_Reponses5.png, id=740, 462.72874pt x 684.5575pt>
+<assets/17_annexe/Annexe_B_Graph_Reponses5.png, id=744, 462.72874pt x 684.5575pt>
 File: assets/17_annexe/Annexe_B_Graph_Reponses5.png Graphic file (type png)
 <use assets/17_annexe/Annexe_B_Graph_Reponses5.png>
 Package pdftex.def Info: assets/17_annexe/Annexe_B_Graph_Reponses5.png  used on input line 91.
 (pdftex.def)             Requested size: 232.52643pt x 344.0014pt.
-<assets/17_annexe/Annexe_B_Graph_Reponses6.png, id=741, 444.66125pt x 650.43pt>
+<assets/17_annexe/Annexe_B_Graph_Reponses6.png, id=745, 444.66125pt x 650.43pt>
 File: assets/17_annexe/Annexe_B_Graph_Reponses6.png Graphic file (type png)
 <use assets/17_annexe/Annexe_B_Graph_Reponses6.png>
 Package pdftex.def Info: assets/17_annexe/Annexe_B_Graph_Reponses6.png  used on input line 95.
 (pdftex.def)             Requested size: 232.52643pt x 340.13109pt.
 
 
-[70
+[71
 
  <./assets/17_annexe/Annexe_B_Graph_Reponses5.png> <./assets/17_annexe/Annexe_B_Graph_Reponses6.png>]
-<assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf, id=749, 845.04686pt x 597.50786pt>
+<assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf, id=753, 845.04686pt x 597.50786pt>
 File: assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf Graphic file (type pdf)
 <use assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf>
 Package pdftex.def Info: assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf  used on input line 112.
 (pdftex.def)             Requested size: 845.0448pt x 597.5064pt.
-<assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf, id=751, page=1, 845.04686pt x 597.50786pt>
+<assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf, id=755, page=1, 845.04686pt x 597.50786pt>
 File: assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf Graphic file (type pdf)
 <use assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf, page 1>
 Package pdftex.def Info: assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf , page1 used on input line 112.
@@ -1733,7 +1735,7 @@ File: assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf Graphic file (type p
 <use assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf, page 1>
 Package pdftex.def Info: assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf , page1 used on input line 112.
 (pdftex.def)             Requested size: 777.43967pt x 549.70477pt.
-<assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf, id=752, page=2, 845.04686pt x 597.50786pt>
+<assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf, id=756, page=2, 845.04686pt x 597.50786pt>
 File: assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf Graphic file (type pdf)
 <use assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf, page 2>
 Package pdftex.def Info: assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf , page2 used on input line 112.
@@ -1752,104 +1754,104 @@ File: assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf Graphic file (type p
 <use assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf, page 2>
 Package pdftex.def Info: assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf , page2 used on input line 112.
 (pdftex.def)             Requested size: 777.43967pt x 549.70477pt.
-[71
-
-
- <./assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf> <./assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf>]
-<assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf, id=760, page=3, 845.04686pt x 597.50786pt>
-File: assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf, page 3>
-Package pdftex.def Info: assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf , page3 used on input line 112.
-(pdftex.def)             Requested size: 777.43967pt x 549.70477pt.
-File: assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf, page 3>
-Package pdftex.def Info: assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf , page3 used on input line 112.
-(pdftex.def)             Requested size: 777.43967pt x 549.70477pt.
-<assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf, id=761, page=4, 845.04686pt x 597.50786pt>
-File: assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf, page 4>
-Package pdftex.def Info: assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf , page4 used on input line 112.
-(pdftex.def)             Requested size: 777.43967pt x 549.70477pt.
-File: assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf, page 4>
-Package pdftex.def Info: assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf , page4 used on input line 112.
-(pdftex.def)             Requested size: 777.43967pt x 549.70477pt.
-
-
-File: assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf, page 3>
-Package pdftex.def Info: assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf , page3 used on input line 112.
-(pdftex.def)             Requested size: 777.43967pt x 549.70477pt.
-File: assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf, page 4>
-Package pdftex.def Info: assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf , page4 used on input line 112.
-(pdftex.def)             Requested size: 777.43967pt x 549.70477pt.
 [72
 
+
  <./assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf> <./assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf>]
-<assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf, id=767, page=5, 845.04686pt x 597.50786pt>
+<assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf, id=765, page=3, 845.04686pt x 597.50786pt>
 File: assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf, page 5>
-Package pdftex.def Info: assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf , page5 used on input line 112.
+<use assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf, page 3>
+Package pdftex.def Info: assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf , page3 used on input line 112.
 (pdftex.def)             Requested size: 777.43967pt x 549.70477pt.
 File: assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf, page 5>
-Package pdftex.def Info: assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf , page5 used on input line 112.
+<use assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf, page 3>
+Package pdftex.def Info: assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf , page3 used on input line 112.
 (pdftex.def)             Requested size: 777.43967pt x 549.70477pt.
-<assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf, id=768, page=6, 845.04686pt x 597.50786pt>
+<assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf, id=766, page=4, 845.04686pt x 597.50786pt>
 File: assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf, page 6>
-Package pdftex.def Info: assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf , page6 used on input line 112.
+<use assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf, page 4>
+Package pdftex.def Info: assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf , page4 used on input line 112.
 (pdftex.def)             Requested size: 777.43967pt x 549.70477pt.
 File: assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf, page 6>
-Package pdftex.def Info: assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf , page6 used on input line 112.
+<use assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf, page 4>
+Package pdftex.def Info: assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf , page4 used on input line 112.
 (pdftex.def)             Requested size: 777.43967pt x 549.70477pt.
 
 
 File: assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf, page 5>
-Package pdftex.def Info: assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf , page5 used on input line 112.
+<use assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf, page 3>
+Package pdftex.def Info: assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf , page3 used on input line 112.
 (pdftex.def)             Requested size: 777.43967pt x 549.70477pt.
 File: assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf, page 6>
-Package pdftex.def Info: assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf , page6 used on input line 112.
+<use assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf, page 4>
+Package pdftex.def Info: assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf , page4 used on input line 112.
 (pdftex.def)             Requested size: 777.43967pt x 549.70477pt.
 [73
 
  <./assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf> <./assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf>]
-<assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf, id=773, page=7, 845.04686pt x 597.50786pt>
+<assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf, id=771, page=5, 845.04686pt x 597.50786pt>
 File: assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf, page 7>
-Package pdftex.def Info: assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf , page7 used on input line 112.
+<use assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf, page 5>
+Package pdftex.def Info: assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf , page5 used on input line 112.
 (pdftex.def)             Requested size: 777.43967pt x 549.70477pt.
 File: assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf, page 7>
-Package pdftex.def Info: assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf , page7 used on input line 112.
+<use assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf, page 5>
+Package pdftex.def Info: assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf , page5 used on input line 112.
 (pdftex.def)             Requested size: 777.43967pt x 549.70477pt.
-<assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf, id=774, page=8, 845.04686pt x 597.50786pt>
+<assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf, id=772, page=6, 845.04686pt x 597.50786pt>
 File: assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf, page 8>
-Package pdftex.def Info: assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf , page8 used on input line 112.
+<use assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf, page 6>
+Package pdftex.def Info: assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf , page6 used on input line 112.
 (pdftex.def)             Requested size: 777.43967pt x 549.70477pt.
 File: assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf, page 8>
-Package pdftex.def Info: assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf , page8 used on input line 112.
+<use assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf, page 6>
+Package pdftex.def Info: assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf , page6 used on input line 112.
 (pdftex.def)             Requested size: 777.43967pt x 549.70477pt.
 
 
 File: assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf, page 7>
-Package pdftex.def Info: assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf , page7 used on input line 112.
+<use assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf, page 5>
+Package pdftex.def Info: assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf , page5 used on input line 112.
 (pdftex.def)             Requested size: 777.43967pt x 549.70477pt.
 File: assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf, page 8>
-Package pdftex.def Info: assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf , page8 used on input line 112.
+<use assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf, page 6>
+Package pdftex.def Info: assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf , page6 used on input line 112.
 (pdftex.def)             Requested size: 777.43967pt x 549.70477pt.
 [74
 
  <./assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf> <./assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf>]
-<assets/17_annexe/Annexe_C_Cover_Cahier_des_Charges.png.png, id=779, 509.905pt x 413.545pt>
+<assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf, id=777, page=7, 845.04686pt x 597.50786pt>
+File: assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf Graphic file (type pdf)
+<use assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf, page 7>
+Package pdftex.def Info: assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf , page7 used on input line 112.
+(pdftex.def)             Requested size: 777.43967pt x 549.70477pt.
+File: assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf Graphic file (type pdf)
+<use assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf, page 7>
+Package pdftex.def Info: assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf , page7 used on input line 112.
+(pdftex.def)             Requested size: 777.43967pt x 549.70477pt.
+<assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf, id=778, page=8, 845.04686pt x 597.50786pt>
+File: assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf Graphic file (type pdf)
+<use assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf, page 8>
+Package pdftex.def Info: assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf , page8 used on input line 112.
+(pdftex.def)             Requested size: 777.43967pt x 549.70477pt.
+File: assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf Graphic file (type pdf)
+<use assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf, page 8>
+Package pdftex.def Info: assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf , page8 used on input line 112.
+(pdftex.def)             Requested size: 777.43967pt x 549.70477pt.
+
+
+File: assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf Graphic file (type pdf)
+<use assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf, page 7>
+Package pdftex.def Info: assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf , page7 used on input line 112.
+(pdftex.def)             Requested size: 777.43967pt x 549.70477pt.
+File: assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf Graphic file (type pdf)
+<use assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf, page 8>
+Package pdftex.def Info: assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf , page8 used on input line 112.
+(pdftex.def)             Requested size: 777.43967pt x 549.70477pt.
+[75
+
+ <./assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf> <./assets/17_annexe/Annexe_B_Resultats_questionnaire.pdf>]
+<assets/17_annexe/Annexe_C_Cover_Cahier_des_Charges.png.png, id=783, 509.905pt x 413.545pt>
 File: assets/17_annexe/Annexe_C_Cover_Cahier_des_Charges.png.png Graphic file (type png)
 <use assets/17_annexe/Annexe_C_Cover_Cahier_des_Charges.png.png>
 Package pdftex.def Info: assets/17_annexe/Annexe_C_Cover_Cahier_des_Charges.png.png  used on input line 126.
@@ -1859,12 +1861,12 @@ Overfull \hbox (70.46037pt too wide) in paragraph at lines 126--127
  [][] 
  []
 
-<assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, id=780, 597.73312pt x 845.07718pt>
+<assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, id=784, 597.73312pt x 845.07718pt>
 File: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf Graphic file (type pdf)
 <use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf>
 Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf  used on input line 135.
 (pdftex.def)             Requested size: 597.73166pt x 845.07512pt.
-<assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, id=782, page=1, 597.73312pt x 845.07718pt>
+<assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, id=786, page=1, 597.73312pt x 845.07718pt>
 File: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf Graphic file (type pdf)
 <use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 1>
 Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page1 used on input line 135.
@@ -1875,7 +1877,7 @@ Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page
 (pdftex.def)             Requested size: 549.91202pt x 777.46756pt.
 
 
-[75
+[76
 
 
 
@@ -1894,313 +1896,313 @@ File: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf Graphic file (type pdf)
 <use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 1>
 Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page1 used on input line 135.
 (pdftex.def)             Requested size: 549.91202pt x 777.46756pt.
-[76
-
- <./assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf>]
-<assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, id=807, page=2, 597.73312pt x 845.07718pt>
-File: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 2>
-Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page2 used on input line 135.
-(pdftex.def)             Requested size: 549.91202pt x 777.46756pt.
-File: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 2>
-Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page2 used on input line 135.
-(pdftex.def)             Requested size: 549.91202pt x 777.46756pt.
-
-
-File: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 2>
-Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page2 used on input line 135.
-(pdftex.def)             Requested size: 549.91202pt x 777.46756pt.
 [77
 
  <./assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf>]
-<assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, id=824, page=3, 597.73312pt x 845.07718pt>
+<assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, id=811, page=2, 597.73312pt x 845.07718pt>
 File: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 3>
-Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page3 used on input line 135.
+<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 2>
+Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page2 used on input line 135.
 (pdftex.def)             Requested size: 549.91202pt x 777.46756pt.
 File: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 3>
-Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page3 used on input line 135.
+<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 2>
+Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page2 used on input line 135.
 (pdftex.def)             Requested size: 549.91202pt x 777.46756pt.
 
 
 File: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 3>
-Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page3 used on input line 135.
+<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 2>
+Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page2 used on input line 135.
 (pdftex.def)             Requested size: 549.91202pt x 777.46756pt.
 [78
 
  <./assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf>]
-<assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, id=837, page=4, 597.73312pt x 845.07718pt>
+<assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, id=829, page=3, 597.73312pt x 845.07718pt>
 File: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 4>
-Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page4 used on input line 135.
+<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 3>
+Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page3 used on input line 135.
 (pdftex.def)             Requested size: 549.91202pt x 777.46756pt.
 File: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 4>
-Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page4 used on input line 135.
+<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 3>
+Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page3 used on input line 135.
 (pdftex.def)             Requested size: 549.91202pt x 777.46756pt.
 
 
 File: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 4>
-Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page4 used on input line 135.
+<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 3>
+Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page3 used on input line 135.
 (pdftex.def)             Requested size: 549.91202pt x 777.46756pt.
 [79
 
  <./assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf>]
-<assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, id=842, page=5, 597.73312pt x 845.07718pt>
+<assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, id=841, page=4, 597.73312pt x 845.07718pt>
 File: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 5>
-Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page5 used on input line 135.
+<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 4>
+Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page4 used on input line 135.
 (pdftex.def)             Requested size: 549.91202pt x 777.46756pt.
 File: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 5>
-Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page5 used on input line 135.
+<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 4>
+Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page4 used on input line 135.
 (pdftex.def)             Requested size: 549.91202pt x 777.46756pt.
 
 
 File: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 5>
-Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page5 used on input line 135.
+<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 4>
+Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page4 used on input line 135.
 (pdftex.def)             Requested size: 549.91202pt x 777.46756pt.
 [80
 
  <./assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf>]
-<assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, id=848, page=6, 597.73312pt x 845.07718pt>
+<assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, id=847, page=5, 597.73312pt x 845.07718pt>
 File: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 6>
-Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page6 used on input line 135.
+<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 5>
+Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page5 used on input line 135.
 (pdftex.def)             Requested size: 549.91202pt x 777.46756pt.
 File: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 6>
-Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page6 used on input line 135.
+<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 5>
+Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page5 used on input line 135.
 (pdftex.def)             Requested size: 549.91202pt x 777.46756pt.
 
 
 File: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 6>
-Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page6 used on input line 135.
+<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 5>
+Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page5 used on input line 135.
 (pdftex.def)             Requested size: 549.91202pt x 777.46756pt.
 [81
 
  <./assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf>]
-<assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, id=867, page=7, 597.73312pt x 845.07718pt>
+<assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, id=852, page=6, 597.73312pt x 845.07718pt>
 File: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 7>
-Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page7 used on input line 135.
+<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 6>
+Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page6 used on input line 135.
 (pdftex.def)             Requested size: 549.91202pt x 777.46756pt.
 File: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 7>
-Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page7 used on input line 135.
+<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 6>
+Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page6 used on input line 135.
 (pdftex.def)             Requested size: 549.91202pt x 777.46756pt.
 
 
 File: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 7>
-Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page7 used on input line 135.
+<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 6>
+Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page6 used on input line 135.
 (pdftex.def)             Requested size: 549.91202pt x 777.46756pt.
 [82
 
  <./assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf>]
-<assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, id=878, page=8, 597.73312pt x 845.07718pt>
+<assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, id=871, page=7, 597.73312pt x 845.07718pt>
 File: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 8>
-Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page8 used on input line 135.
+<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 7>
+Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page7 used on input line 135.
 (pdftex.def)             Requested size: 549.91202pt x 777.46756pt.
 File: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 8>
-Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page8 used on input line 135.
+<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 7>
+Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page7 used on input line 135.
 (pdftex.def)             Requested size: 549.91202pt x 777.46756pt.
 
 
 File: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 8>
-Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page8 used on input line 135.
+<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 7>
+Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page7 used on input line 135.
 (pdftex.def)             Requested size: 549.91202pt x 777.46756pt.
 [83
 
  <./assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf>]
-<assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, id=883, page=9, 597.73312pt x 845.07718pt>
+<assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, id=882, page=8, 597.73312pt x 845.07718pt>
 File: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 9>
-Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page9 used on input line 135.
+<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 8>
+Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page8 used on input line 135.
 (pdftex.def)             Requested size: 549.91202pt x 777.46756pt.
 File: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 9>
-Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page9 used on input line 135.
+<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 8>
+Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page8 used on input line 135.
 (pdftex.def)             Requested size: 549.91202pt x 777.46756pt.
 
 
 File: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 9>
-Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page9 used on input line 135.
+<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 8>
+Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page8 used on input line 135.
 (pdftex.def)             Requested size: 549.91202pt x 777.46756pt.
 [84
 
  <./assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf>]
-<assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, id=889, page=10, 597.73312pt x 845.07718pt>
+<assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, id=888, page=9, 597.73312pt x 845.07718pt>
 File: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 10>
-Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page10 used on input line 135.
+<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 9>
+Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page9 used on input line 135.
 (pdftex.def)             Requested size: 549.91202pt x 777.46756pt.
 File: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 10>
-Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page10 used on input line 135.
+<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 9>
+Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page9 used on input line 135.
 (pdftex.def)             Requested size: 549.91202pt x 777.46756pt.
 
 
 File: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 10>
-Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page10 used on input line 135.
+<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 9>
+Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page9 used on input line 135.
 (pdftex.def)             Requested size: 549.91202pt x 777.46756pt.
 [85
 
  <./assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf>]
-<assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, id=894, page=11, 597.73312pt x 845.07718pt>
+<assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, id=893, page=10, 597.73312pt x 845.07718pt>
 File: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 11>
-Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page11 used on input line 135.
+<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 10>
+Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page10 used on input line 135.
 (pdftex.def)             Requested size: 549.91202pt x 777.46756pt.
 File: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 11>
-Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page11 used on input line 135.
+<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 10>
+Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page10 used on input line 135.
 (pdftex.def)             Requested size: 549.91202pt x 777.46756pt.
 
 
 File: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 11>
-Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page11 used on input line 135.
+<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 10>
+Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page10 used on input line 135.
 (pdftex.def)             Requested size: 549.91202pt x 777.46756pt.
 [86
 
  <./assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf>]
-<assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, id=899, page=12, 597.73312pt x 845.07718pt>
+<assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, id=898, page=11, 597.73312pt x 845.07718pt>
 File: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 12>
-Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page12 used on input line 135.
+<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 11>
+Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page11 used on input line 135.
 (pdftex.def)             Requested size: 549.91202pt x 777.46756pt.
 File: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 12>
-Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page12 used on input line 135.
+<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 11>
+Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page11 used on input line 135.
 (pdftex.def)             Requested size: 549.91202pt x 777.46756pt.
 
 
 File: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 12>
-Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page12 used on input line 135.
+<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 11>
+Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page11 used on input line 135.
 (pdftex.def)             Requested size: 549.91202pt x 777.46756pt.
 [87
 
  <./assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf>]
-<assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, id=910, page=13, 597.73312pt x 845.07718pt>
+<assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, id=903, page=12, 597.73312pt x 845.07718pt>
 File: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 13>
-Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page13 used on input line 135.
+<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 12>
+Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page12 used on input line 135.
 (pdftex.def)             Requested size: 549.91202pt x 777.46756pt.
 File: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 13>
-Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page13 used on input line 135.
+<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 12>
+Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page12 used on input line 135.
 (pdftex.def)             Requested size: 549.91202pt x 777.46756pt.
 
 
 File: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 13>
-Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page13 used on input line 135.
+<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 12>
+Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page12 used on input line 135.
 (pdftex.def)             Requested size: 549.91202pt x 777.46756pt.
 [88
 
  <./assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf>]
-<assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, id=915, page=14, 597.73312pt x 845.07718pt>
+<assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, id=914, page=13, 597.73312pt x 845.07718pt>
 File: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 14>
-Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page14 used on input line 135.
+<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 13>
+Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page13 used on input line 135.
 (pdftex.def)             Requested size: 549.91202pt x 777.46756pt.
 File: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 14>
-Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page14 used on input line 135.
+<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 13>
+Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page13 used on input line 135.
 (pdftex.def)             Requested size: 549.91202pt x 777.46756pt.
 
 
 File: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 14>
-Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page14 used on input line 135.
+<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 13>
+Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page13 used on input line 135.
 (pdftex.def)             Requested size: 549.91202pt x 777.46756pt.
 [89
 
  <./assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf>]
-<assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, id=932, page=15, 597.73312pt x 845.07718pt>
+<assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, id=919, page=14, 597.73312pt x 845.07718pt>
 File: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 15>
-Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page15 used on input line 135.
+<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 14>
+Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page14 used on input line 135.
 (pdftex.def)             Requested size: 549.91202pt x 777.46756pt.
 File: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 15>
-Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page15 used on input line 135.
+<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 14>
+Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page14 used on input line 135.
 (pdftex.def)             Requested size: 549.91202pt x 777.46756pt.
 
 
 File: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 15>
-Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page15 used on input line 135.
+<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 14>
+Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page14 used on input line 135.
 (pdftex.def)             Requested size: 549.91202pt x 777.46756pt.
 [90
 
  <./assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf>]
-<assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, id=938, page=16, 597.73312pt x 845.07718pt>
+<assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, id=937, page=15, 597.73312pt x 845.07718pt>
 File: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 16>
-Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page16 used on input line 135.
+<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 15>
+Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page15 used on input line 135.
 (pdftex.def)             Requested size: 549.91202pt x 777.46756pt.
 File: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 16>
-Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page16 used on input line 135.
+<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 15>
+Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page15 used on input line 135.
 (pdftex.def)             Requested size: 549.91202pt x 777.46756pt.
 
 
 File: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 16>
-Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page16 used on input line 135.
+<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 15>
+Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page15 used on input line 135.
 (pdftex.def)             Requested size: 549.91202pt x 777.46756pt.
 [91
 
  <./assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf>]
-<assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, id=943, page=17, 597.73312pt x 845.07718pt>
+<assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, id=942, page=16, 597.73312pt x 845.07718pt>
 File: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 17>
-Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page17 used on input line 135.
+<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 16>
+Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page16 used on input line 135.
 (pdftex.def)             Requested size: 549.91202pt x 777.46756pt.
 File: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 17>
-Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page17 used on input line 135.
+<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 16>
+Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page16 used on input line 135.
 (pdftex.def)             Requested size: 549.91202pt x 777.46756pt.
 
 
 File: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 17>
-Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page17 used on input line 135.
+<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 16>
+Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page16 used on input line 135.
 (pdftex.def)             Requested size: 549.91202pt x 777.46756pt.
 [92
 
  <./assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf>]
-<assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, id=948, page=18, 597.73312pt x 845.07718pt>
+<assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, id=947, page=17, 597.73312pt x 845.07718pt>
 File: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 18>
-Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page18 used on input line 135.
+<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 17>
+Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page17 used on input line 135.
 (pdftex.def)             Requested size: 549.91202pt x 777.46756pt.
 File: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 18>
-Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page18 used on input line 135.
+<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 17>
+Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page17 used on input line 135.
 (pdftex.def)             Requested size: 549.91202pt x 777.46756pt.
 
 
 File: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf Graphic file (type pdf)
-<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 18>
-Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page18 used on input line 135.
+<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 17>
+Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page17 used on input line 135.
 (pdftex.def)             Requested size: 549.91202pt x 777.46756pt.
 [93
+
+ <./assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf>]
+<assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, id=952, page=18, 597.73312pt x 845.07718pt>
+File: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf Graphic file (type pdf)
+<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 18>
+Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page18 used on input line 135.
+(pdftex.def)             Requested size: 549.91202pt x 777.46756pt.
+File: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf Graphic file (type pdf)
+<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 18>
+Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page18 used on input line 135.
+(pdftex.def)             Requested size: 549.91202pt x 777.46756pt.
+
+
+File: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf Graphic file (type pdf)
+<use assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf, page 18>
+Package pdftex.def Info: assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf , page18 used on input line 135.
+(pdftex.def)             Requested size: 549.91202pt x 777.46756pt.
+[94
 
  <./assets/17_annexe/Annexe_C_Cahier_des_Charges.pdf>]) (./main.aux)
  ***********
@@ -2213,18 +2215,18 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 30535 strings out of 474662
- 605777 string characters out of 5751108
- 966032 words of memory out of 5000000
- 52550 multiletter control sequences out of 15000+600000
+ 30544 strings out of 474662
+ 606113 string characters out of 5751108
+ 966033 words of memory out of 5000000
+ 52555 multiletter control sequences out of 15000+600000
  628587 words of font info for 216 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 89i,18n,120p,1374b,671s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 89i,18n,120p,1396b,671s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </Users/thaliawoods/Library/texlive/2025basic/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm0900.600pk></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/newpx/zplb.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/newpx/zplr.pfb></usr/local/texlive/2025basic/texmf-dist/fonts/type1/public/newpx/zplri.pfb>
-Output written on main.pdf (94 pages, 11946631 bytes).
+Output written on main.pdf (95 pages, 11947837 bytes).
 PDF statistics:
- 1103 PDF objects out of 1200 (max. 8388607)
- 723 compressed objects within 8 object streams
- 206 named destinations out of 1000 (max. 500000)
+ 1107 PDF objects out of 1200 (max. 8388607)
+ 726 compressed objects within 8 object streams
+ 207 named destinations out of 1000 (max. 500000)
  46865 words of extra memory for PDF output out of 51595 (max. 10000000)
 
